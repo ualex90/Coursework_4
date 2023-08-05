@@ -8,7 +8,7 @@ class API(ABC):
         self.file = None
 
     @abstractmethod
-    def get_vacancies(self, text):
+    def get_vacancies(self, search_query):
         pass
 
     def write_json(self):
