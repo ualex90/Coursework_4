@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
 
-class Vacancy(ABC):
+class Area(ABC):
     def __init__(self):
         pass
