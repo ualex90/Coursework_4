@@ -1,7 +1,7 @@
 import requests
 
 from settings import HH_VACANCIES
-from src.area_api import AreaAPI
+from src.areas.area_api import AreaAPI
 
 
 class HeadHunterAPI(AreaAPI):
@@ -27,7 +27,7 @@ class HeadHunterAPI(AreaAPI):
         if kwargs.get('page') is None:
             params["page"] = 0
             while response.get('page') <= 40 and response.get('page') != (response.get('pages') - 1):
-                print(params.get("page"))
+                print(f'\rПолучение данных (станица {params.get("page") + 1} из {response.get("pages")})', end='')
                 response = requests.get('https://api.hh.ru/vacancies', params).json()
                 self.response.extend(response.get('items'))
                 params["page"] += 1
@@ -35,14 +35,4 @@ class HeadHunterAPI(AreaAPI):
             self.response = response.get('items')
         return None
 
-
-if __name__ == '__main__':
-    hh = HeadHunterAPI()
-    search_query = {
-        'text': 'АСУТП',
-        # 'page': 0,
-        'per_page': 50
-    }
-    hh.get_vacancies(**search_query)
-    hh.write_json()
 
