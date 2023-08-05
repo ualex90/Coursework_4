@@ -2,13 +2,13 @@ import json
 from abc import ABC, abstractmethod
 
 
-class AreaAPI(ABC):
+class API(ABC):
     def __init__(self):
         self.response = list()
         self.file = None
 
     @abstractmethod
-    def get_vacancies(self):
+    def get_vacancies(self, text):
         pass
 
     def write_json(self):
