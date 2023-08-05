@@ -8,8 +8,8 @@ ROOT = Path(__file__).resolve().parent
 FIXTURES = Path(ROOT, 'fixtures')
 
 # Файлы
-HH_VACANCIES = Path(FIXTURES, 'hh_vacancies.json')
-SJ_VACANCIES = Path(FIXTURES, 'sj_vacancies.json')
+HH_RESPONSE = Path(FIXTURES, 'hh_vacancies.yaml')
+SJ_RESPONSE = Path(FIXTURES, 'sj_vacancies.yaml')
 
 # API
 load_dotenv()
