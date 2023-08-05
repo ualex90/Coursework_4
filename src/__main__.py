@@ -7,5 +7,5 @@ if __name__ == '__main__':
     # hh.write_json()
 
     sj = SuperJobAPI()
-    sj.get_vacancies('АСУТП')
+    sj.get_vacancies('Python')
     sj.write_json()

@@ -19,5 +19,5 @@ class SuperJobAPI(API):
         headers = {'X-Api-App-Id': SJ_KEY}
         params = {'keyword': search_query}
         response = requests.get(url, headers=headers, params=params).json()
-        self.response = response
+        self.response = response.get("objects")
         return None
