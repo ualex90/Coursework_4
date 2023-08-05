@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime
 
 from settings import SJ_RESPONSE, SJ_KEY
 from src.api.api import API
@@ -29,4 +30,12 @@ class SuperJobAPI(API):
         return self.normalization_data(vacancies)
 
     def normalization_data(self, data: list[dict]) -> list[dict]:
-        return data
+        normal_data = list()
+        for item in data:
+            normal_data.append({'service': 'SuperJob',
+                                'vacancy_id': item.get('id'),
+                                'name': item.get('profession'),
+                                'date': datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y"),
+                                'area': item.get('address').partition(',')[0] if item.get('address') else 'None',
+                                })
+        return normal_data
