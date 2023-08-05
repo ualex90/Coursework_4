@@ -9,7 +9,7 @@ class HeadHunterAPI(API):
         super().__init__()
         self.file = HH_VACANCIES
 
-    def get_vacancies(self, text, area=1, page=0, per_page=50):
+    def get_vacancies(self, text, area=1, page=None, per_page=50):
         """
         Возвращает JSON на запрос по вакансиям
         :param per_page:

@@ -2,9 +2,5 @@ from src.api.headhunter_api import HeadHunterAPI
 
 if __name__ == '__main__':
     hh = HeadHunterAPI()
-    search_query = {
-        'text': 'АСУТП',
-        'per_page': 50
-    }
-    hh.get_vacancies(**search_query)
+    hh.get_vacancies('инженер')
     hh.write_json()
