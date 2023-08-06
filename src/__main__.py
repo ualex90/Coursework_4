@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # print(hh.get_vacancies('АСУТП', page_limit=10))
     # print(sj.get_vacancies('АСУТП'))
 
-    for item in hh.get_vacancies('АСУТП', page_limit=13):
+    for item in hh.get_vacancies('АСУТП', page_limit=15):
         print(Vacancy(**item))
     for item in sj.get_vacancies('АСУТП'):
         print(Vacancy(**item))

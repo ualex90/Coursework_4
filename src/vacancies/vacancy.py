@@ -1,4 +1,8 @@
 class Vacancy:
+    __slots__ = ('service', 'vacancy_id', 'name',
+                 'date', 'area', 'currency',
+                 'salary_fom', 'salary_to', 'url')
+
     def __init__(self, service: str, vacancy_id: int, name: str,
                  date: str, area: str, currency: str,
                  salary_fom: int, salary_to: int, url: str):
