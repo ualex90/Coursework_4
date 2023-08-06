@@ -30,12 +30,22 @@ class SuperJobAPI(API):
         return self.normalization_data(vacancies)
 
     def normalization_data(self, data: list[dict]) -> list[dict]:
-        normal_data = list()
+        normal = list()
         for item in data:
-            normal_data.append({'service': 'SuperJob',
-                                'vacancy_id': item.get('id'),
-                                'name': item.get('profession'),
-                                'date': datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y"),
-                                'area': item.get('address').partition(',')[0] if item.get('address') else 'None',
-                                })
-        return normal_data
+            vacancy_id: int = int(item.get('id'))
+            name: str = item.get('profession')
+            date: str = datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y")
+            area: str = item.get('address').partition(',')[0] if item.get('address') else 'None'
+            currency: str = 'RUR' if item.get('currency') == 'rub' else 'USD'
+            salary_fom: float = float(item.get('payment_from')) if float(item.get('payment_from')) else None
+            salary_to: float = float(item.get('payment_to')) if float(item.get('payment_to')) else salary_fom
+            normal.append({'service': 'SuperJob',
+                           'vacancy_id': vacancy_id,
+                           'name': name,
+                           'date': date,
+                           'area': area,
+                           'currency': currency,
+                           'salary_fom': salary_fom,
+                           'salary_to': salary_to
+                           })
+        return normal
