@@ -8,4 +8,9 @@ if __name__ == '__main__':
     # hh.get_vacancies('АСУТП', write_json=True)
     # sj.get_vacancies('АСУТП', write_json=True)
 
-    print(sj.get_vacancies('АСУТП'))
+    hh.get_vacancies('АСУТП')
+    sj.get_vacancies('АСУТП')
+
+    # print(sj.get_vacancies('АСУТП'))
+    # print(hh.get_vacancies('АСУТП'))
+
