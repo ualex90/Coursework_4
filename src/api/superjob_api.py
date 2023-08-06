@@ -48,15 +48,18 @@ class SuperJobAPI(API):
             name: str = item.get('profession')
             date: str = datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y")
             area: str = item.get('address').partition(',')[0] if item.get('address') else 'None'
-            currency: str = 'RUR' if item.get('currency') == 'rub' else 'USD'
+            if item.get('currency'):
+                currency: str = 'RUR' if item.get('currency') == 'rub' else item.get('currency').upper()
+            else:
+                currency: str = 'None'
             if item.get('payment_from') and item.get('payment_to'):
-                salary_from: int = int(item.get('payment_from'))
-                salary_to: int = int(item.get('payment_to'))
+                salary_from: int = item.get('payment_from')
+                salary_to: int = item.get('payment_to')
             elif item.get('payment_from'):
-                salary_from: int = int(item.get('payment_from'))
+                salary_from: int = item.get('payment_from')
                 salary_to: int = salary_from
             elif item.get('payment_to'):
-                salary_to: int = int(item.get('payment_to'))
+                salary_to: int = item.get('payment_to')
                 salary_from: int = salary_to
             else:
                 salary_to: int = 0
