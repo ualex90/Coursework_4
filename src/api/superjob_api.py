@@ -44,7 +44,7 @@ class SuperJobAPI(API):
         """
         normal = list()
         for item in vacancies:
-            vacancy_id: int = int(item.get('id'))
+            vacancy_id: str = f'SJ_{item.get("id")}'
             name: str = item.get('profession')
             date: str = datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y")
             area: str = item.get('address').partition(',')[0] if item.get('address') else 'None'

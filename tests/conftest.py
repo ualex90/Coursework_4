@@ -18,7 +18,7 @@ def sj():
 @pytest.fixture
 def vacancy_1():
     return Vacancy(**{'service': 'SuperJob',
-                      'vacancy_id': 1111,
+                      'vacancy_id': 'HH_1111',
                       'name': 'Тест vacancy_1',
                       'date': '01.09.2023',
                       'area': 'World',
@@ -32,7 +32,7 @@ def vacancy_1():
 @pytest.fixture
 def vacancy_2():
     return Vacancy(**{'service': 'SuperJob',
-                      'vacancy_id': 1111,
+                      'vacancy_id': 'SJ_1111',
                       'name': 'Тест vacancy_2',
                       'date': '01.09.2023',
                       'area': 'World',

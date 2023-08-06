@@ -41,17 +41,18 @@ class HeadHunterAPI(API):
             page_limit = response.get('pages')
 
         # Перебор страниц и получение данных
-        vacancies = response.get('items')
-        if vacancies:
+        vacancies = list()
+        if response.get('pages'):
             if page is None:
                 params["page"] = 0
                 while response.get('page') != (page_limit - 1):
                     print(f'\rПолучение данных (станица {params["page"] + 1} из {page_limit})', end='')
                     response = requests.get(url, params).json()
-                    vacancies.extend(vacancies)
+                    vacancies.extend(response.get('items'))
                     params["page"] += 1
                 print('\rHeadHunter - Ok')
             else:
+                vacancies = response.get('items')
                 print('HeadHunter - Ok')
 
             if write_json:
@@ -73,7 +74,7 @@ class HeadHunterAPI(API):
         """
         normal = list()
         for item in vacancies:
-            vacancy_id: int = int(item.get('id'))
+            vacancy_id: str = f'HH_{item.get("id")}'
             name: str = item.get('name')
             date: str = datetime.fromisoformat(item.get('published_at')).strftime("%d.%m.%Y")
             area: str = item.get('area').get('name').partition(',')[0] if item.get('area') else 'None'
