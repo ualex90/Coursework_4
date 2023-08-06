@@ -1,3 +1,5 @@
+import math
+
 import requests
 from datetime import datetime
 
@@ -10,27 +12,55 @@ class SuperJobAPI(API):
         super().__init__()
         self.response_file = SJ_RESPONSE
 
-    def get_vacancies(self, search_query, write_json=False):
+    def get_vacancies(self, search_query, page=None, per_page=100, page_limit=None, write_json=False):
         """
         Возвращает список вакансий по запросу
 
         :param search_query: Поисковой запрос
+        :param page: Страница ответа
+        :param per_page: Количество вакансий на странице (не более 100)
+        :param page_limit: Максимальное количество страниц (не более 500)
         :param write_json: True - если необходимо сохранить ответ сервиса в файл
         :return:
         """
-        url = 'https://api.superjob.ru/2.0/vacancies'
-        headers = {'X-Api-App-Id': SJ_KEY}
-        params = {'keyword': search_query}
 
+        url = 'https://api.superjob.ru/2.0/vacancies/'
+        headers = {'X-Api-App-Id': SJ_KEY}
+        params = {'keyword': search_query,
+                  'count': per_page,
+                  'page': page
+                  }
         print('Запрос вакансий SuperJob')
         response = requests.get(url, headers=headers, params=params).json()
-        vacancies = response.get("objects")
-        if vacancies:
-            print('\rSuperJob - Ok')
+
+        # Определение максимального количества страниц
+        if math.ceil(response.get('total') / per_page) < 600 // per_page:
+            pages = math.ceil(response.get('total') / per_page)
+        else:
+            pages = 600 // per_page
+        if page_limit is None or page_limit > pages:
+            page_limit = pages
+
+        # Перебор страниц и получение данных
+        vacancies = list()
+        if response.get('total'):
+            if page is None:
+                params["page"] = 0
+                while params["page"] != page_limit:
+                    print(f'\rПолучение данных (станица {params["page"] + 1} из {page_limit})', end='')
+                    response = requests.get(url, headers=headers, params=params).json()
+                    vacancies.extend(response.get("objects"))
+                    params["page"] += 1
+                print('\rSuperJob - Ok')
+            else:
+                vacancies = response.get("objects")
+                print('SuperJob - Ok')
+
             if write_json:
                 self.write_yaml(vacancies)
         else:
-            print('HeadHunter - Отсутствуют вакансии по запросу')
+            print('SuperJob - Отсутствуют вакансии по запросу')
+
         return self.normalization_data(vacancies)
 
     @staticmethod

@@ -21,8 +21,8 @@ class HeadHunterAPI(API):
         :param area: Регион
         :param page: Страница ответа
         :param per_page: Количество вакансий на странице (не более 50)
+        :param page_limit: Максимальное количество страниц (максимум 40 при per_page=50)
         :param write_json: True - если необходимо сохранить ответ сервиса в файл
-        :param page_limit: Количество страниц (максимум 40 при per_page=50)
         :return:
         """
         # Инициализация запроса
@@ -37,7 +37,6 @@ class HeadHunterAPI(API):
 
         # Определение максимального количества страниц
         if page_limit is None or page_limit > response.get('pages'):
-            pass
             page_limit = response.get('pages')
 
         # Перебор страниц и получение данных
