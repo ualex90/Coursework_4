@@ -41,7 +41,7 @@ def test_normalization_data(sj, in_area, in_date, currency, in_salary_from, in_s
                  'currency': currency,
                  'payment_from': in_salary_from,
                  'payment_to': in_salary_to,
-                 'link': 'http://hh.ru'
+                 'link': 'https://api.superjob.ru/'
                  }])
     out_data = sj.normalization_data(in_data)
     assert out_data == ([{'service': 'SuperJob',
@@ -52,4 +52,5 @@ def test_normalization_data(sj, in_area, in_date, currency, in_salary_from, in_s
                           'currency': out_currency,
                           'salary_fom': out_salary_from,
                           'salary_to': out_salary_to,
-                          'url': 'http://hh.ru'}])
+                          'url': 'https://api.superjob.ru/'
+                          }])

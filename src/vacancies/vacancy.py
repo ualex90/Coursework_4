@@ -32,7 +32,7 @@ class Vacancy:
 
     def __str__(self):
         return f'''Название: "{self.name}"
-                 \rРегион: {self.area}
-                 \rЗарплата: {str(self.salary_to) + " " + self.currency if self.salary_to else 'Не указана'}
-                 \rСсылка: {self.url}
-                '''
+Регион: {self.area}
+Зарплата: {str(self.salary_to) + " " + self.currency if self.salary_to else 'Не указана'}
+Ссылка: {self.url}
+'''

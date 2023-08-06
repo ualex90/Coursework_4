@@ -41,7 +41,7 @@ def test_normalization_data(hh, in_area, in_date, salary,
                  'name': 'Тест метода нормализации данных',
                  'published_at': in_date,
                  'salary': salary,
-                 'alternate_url': 'http://hh.ru'
+                 'alternate_url': 'https://dev.hh.ru/'
                  }])
     out_data = hh.normalization_data(in_data)
     assert out_data == ([{'service': 'HeadHunter',
@@ -52,4 +52,5 @@ def test_normalization_data(hh, in_area, in_date, salary,
                           'currency': out_currency,
                           'salary_fom': out_salary_from,
                           'salary_to': out_salary_to,
-                          'url': 'http://hh.ru'}])
+                          'url': 'https://dev.hh.ru/'
+                          }])
