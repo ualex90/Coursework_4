@@ -25,3 +25,9 @@ class Vacancy:
         self.salary_fom = salary_fom
         self.salary_to = salary_to
         self.url = url
+
+    def __str__(self):
+        return f'''Название: "{self.name}"
+                 \rРегион: {self.area}
+                 \rСредняя зарплата: {(self.salary_fom + self.salary_to) / 2 if self.salary_to else 'Не указана'}
+                '''

@@ -78,8 +78,8 @@ class HeadHunterAPI(API):
                     salary_to: float = float(item.get('salary').get('to'))
                     salary_from: float = salary_to
             else:
-                salary_from: float = 0
-                salary_to: float = 0
+                salary_from: float = 0.0
+                salary_to: float = 0.0
             url: str = item.get('alternate_url')
 
             normal.append({'service': 'HeadHunter',
