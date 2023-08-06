@@ -77,18 +77,25 @@ class HeadHunterAPI(API):
             name: str = item.get('name')
             date: str = datetime.fromisoformat(item.get('published_at')).strftime("%d.%m.%Y")
             area: str = item.get('area').get('name').partition(',')[0] if item.get('area') else 'None'
-            currency: str = item.get('salary').get('currency') if item.get('salary') else 'None'
             if item.get('salary'):
+                if item.get('salary').get('currency'):
+                    currency: str = item.get('salary').get('currency')
+                else:
+                    currency: str = 'None'
                 if item.get('salary').get('from') and item.get('salary').get('to'):
                     salary_from: int = int(item.get('salary').get('from'))
                     salary_to: int = int(item.get('salary').get('to'))
                 elif item.get('salary').get('from'):
                     salary_from: int = int(item.get('salary').get('from'))
                     salary_to: int = salary_from
-                else:
+                elif item.get('salary').get('to'):
                     salary_to: int = int(item.get('salary').get('to'))
                     salary_from: int = salary_to
+                else:
+                    salary_from: int = 0
+                    salary_to: int = 0
             else:
+                currency: str = 'None'
                 salary_from: int = 0
                 salary_to: int = 0
             url: str = item.get('alternate_url')
