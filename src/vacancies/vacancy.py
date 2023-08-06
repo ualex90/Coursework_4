@@ -1,7 +1,7 @@
 class Vacancy:
     def __init__(self, service: str, vacancy_id: int, name: str,
                  date: str, area: str, currency: str,
-                 salary_fom: float, salary_to: float, url: str):
+                 salary_fom: int, salary_to: int, url: str):
         """
         Инициализация
 
@@ -29,5 +29,6 @@ class Vacancy:
     def __str__(self):
         return f'''Название: "{self.name}"
                  \rРегион: {self.area}
-                 \rСредняя зарплата: {(self.salary_fom + self.salary_to) / 2 if self.salary_to else 'Не указана'}
+                 \rЗарплата: {str(self.salary_to) + " " + self.currency if self.salary_to else 'Не указана'}
+                 \rСсылка: {self.url}
                 '''

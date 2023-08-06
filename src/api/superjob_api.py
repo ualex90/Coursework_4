@@ -49,18 +49,18 @@ class SuperJobAPI(API):
             date: str = datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y")
             area: str = item.get('address').partition(',')[0] if item.get('address') else 'None'
             currency: str = 'RUR' if item.get('currency') == 'rub' else 'USD'
-            if float(item.get('payment_from')) and float(item.get('payment_to')):
-                salary_from: float = float(item.get('payment_from'))
-                salary_to: float = float(item.get('payment_to'))
-            elif float(item.get('payment_from')):
-                salary_from: float = float(item.get('payment_from'))
-                salary_to: float = salary_from
-            elif float(item.get('payment_to')):
-                salary_to: float = float(item.get('payment_to'))
-                salary_from: float = salary_to
+            if item.get('payment_from') and item.get('payment_to'):
+                salary_from: int = int(item.get('payment_from'))
+                salary_to: int = int(item.get('payment_to'))
+            elif item.get('payment_from'):
+                salary_from: int = int(item.get('payment_from'))
+                salary_to: int = salary_from
+            elif item.get('payment_to'):
+                salary_to: int = int(item.get('payment_to'))
+                salary_from: int = salary_to
             else:
-                salary_to: float = 0.0
-                salary_from: float = 0.0
+                salary_to: int = 0
+                salary_from: int = 0
             url: str = item.get('link')
 
             normal.append({'service': 'SuperJob',
