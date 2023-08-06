@@ -2,6 +2,7 @@ import pytest
 
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
+from src.vacancies.vacancies import Vacancies
 from src.vacancies.vacancy import Vacancy
 
 
@@ -13,6 +14,11 @@ def hh():
 @pytest.fixture
 def sj():
     return SuperJobAPI()
+
+
+@pytest.fixture
+def vacancies():
+    return Vacancies()
 
 
 @pytest.fixture
