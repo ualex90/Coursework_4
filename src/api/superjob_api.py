@@ -13,8 +13,9 @@ class SuperJobAPI(API):
     def get_vacancies(self, search_query, write_json=False):
         """
         Возвращает список вакансий по запросу
-        :param write_json:
-        :param search_query:
+
+        :param search_query: Поисковой запрос
+        :param write_json: True - если необходимо сохранить ответ сервиса в файл
         :return:
         """
         url = 'https://api.superjob.ru/2.0/vacancies'
@@ -32,9 +33,17 @@ class SuperJobAPI(API):
             print('HeadHunter - Отсутствуют вакансии по запросу')
         return self.normalization_data(vacancies)
 
-    def normalization_data(self, data: list[dict]) -> list[dict]:
+    @staticmethod
+    def normalization_data(vacancies: list[dict], **kwargs) -> list[dict]:
+        """
+        Приведение полученных данных о вакансиях
+        в формате SuperJob к формату приложения
+
+        :param vacancies: исходные данные о вакансиях HeadHunter
+        :return:
+        """
         normal = list()
-        for item in data:
+        for item in vacancies:
             vacancy_id: int = int(item.get('id'))
             name: str = item.get('profession')
             date: str = datetime.fromtimestamp(item.get('date_published')).strftime("%d.%m.%Y")

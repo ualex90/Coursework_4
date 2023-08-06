@@ -14,6 +14,7 @@ class HeadHunterAPI(API):
     def get_vacancies(self, search_query: str, area=1, page=None, per_page=50, write_json=False) -> list[dict]:
         """
         Возвращает список вакансий по запросу
+
         :param search_query: Поисковой запрос
         :param area: Регион
         :param page: Страница ответа
@@ -50,9 +51,17 @@ class HeadHunterAPI(API):
 
         return self.normalization_data(vacancies)
 
-    def normalization_data(self, data: list[dict]) -> list[dict]:
+    @staticmethod
+    def normalization_data(vacancies: list[dict], **kwargs) -> list[dict]:
+        """
+        Приведение полученных данных о вакансиях
+        в формате HeadHunter к формату приложения
+
+        :param vacancies: исходные данные о вакансиях HeadHunter
+        :return:
+        """
         normal = list()
-        for item in data:
+        for item in vacancies:
             vacancy_id: int = int(item.get('id'))
             name: str = item.get('name')
             date: str = datetime.fromisoformat(item.get('published_at')).strftime("%d.%m.%Y")
