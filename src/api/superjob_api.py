@@ -12,7 +12,8 @@ class SuperJobAPI(API):
         super().__init__()
         self.response_file = SJ_RESPONSE
 
-    def get_vacancies(self, search_query, page=None, per_page=100, page_limit=None, write_json=False):
+    def get_vacancies(self, search_query: str, page=None, per_page=100,
+                      page_limit=None, write_json=False) -> list[dict]:
         """
         Возвращает список вакансий по запросу
 
