@@ -23,99 +23,92 @@ def vacancies():
 
 @pytest.fixture
 def vacancy_1():
-    return Vacancy(**{'service': 'HeadHunter',
-                      'vacancy_id': 'HH_1111',
-                      'title': 'Тест vacancy_1',
-                      'date': '01.09.2023',
-                      'area': 'World',
-                      'currency': 'RUR',
-                      'salary_fom': 1000,
-                      'salary_to': 1000,
-                      'url': 'https://dev.hh.ru/'
-                      })
+    return Vacancy({'HH_1111': {'service': 'HeadHunter',
+                                'title': 'Тест vacancy_1',
+                                'date': '01.09.2023',
+                                'area': 'World',
+                                'currency': 'RUR',
+                                'salary_fom': 1000,
+                                'salary_to': 1000,
+                                'url': 'https://dev.hh.ru/'
+                                }})
 
 
 @pytest.fixture
 def vacancy_2():
-    return Vacancy(**{'service': 'SuperJob',
-                      'vacancy_id': 'SJ_1111',
-                      'title': 'Тест vacancy_2',
-                      'date': '01.09.2023',
-                      'area': 'World',
-                      'currency': 'RUR',
-                      'salary_fom': 0,
-                      'salary_to': 0,
-                      'url': 'https://api.superjob.ru/'
-                      })
+    return Vacancy({'SJ_1111': {'service': 'SuperJob',
+                                'title': 'Тест vacancy_2',
+                                'date': '01.09.2023',
+                                'area': 'World',
+                                'currency': 'RUR',
+                                'salary_fom': 0,
+                                'salary_to': 0,
+                                'url': 'https://api.superjob.ru/'
+                                }})
 
 
 @pytest.fixture
 def vacancies_list_1():
-    return [{'service': 'HeadHunter',
-             'vacancy_id': 'HH_0001',
-             'title': 'Тест vacancy_1',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://dev.hh.ru/'
-             }]
+    return [{'HH_0001': {'service': 'HeadHunter',
+                         'title': 'Тест vacancy_1',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://dev.hh.ru/'
+                         }}]
 
 
 @pytest.fixture
 def vacancies_list_2():
-    return [{'service': 'HeadHunter',
-             'vacancy_id': 'HH_0002',
-             'title': 'Тест vacancy_2',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://dev.hh.ru/'
-             },
-            {'service': 'SuperJob',
-             'vacancy_id': 'SJ_0001',
-             'title': 'Тест vacancy_3',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://api.superjob.ru/'
-             }]
+    return [{'HH_0002': {'service': 'HeadHunter',
+                         'title': 'Тест vacancy_2',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://dev.hh.ru/'
+                         }},
+            {'SJ_0001': {'service': 'SuperJob',
+                         'vacancy_id': 'SJ_0001',
+                         'title': 'Тест vacancy_3',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://api.superjob.ru/'
+                         }}]
 
 
 @pytest.fixture
 def vacancies_list_3():
-    return [{'service': 'HeadHunter',
-             'vacancy_id': 'HH_0003',
-             'title': 'Тест vacancy_4',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://dev.hh.ru/'
-             },
-            {'service': 'SuperJob',
-             'vacancy_id': 'SJ_0002',
-             'title': 'Тест vacancy_5',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://api.superjob.ru/'
-             },
-            {'service': 'SuperJob',
-             'vacancy_id': 'SJ_0003',
-             'title': 'Тест vacancy_6',
-             'date': '01.09.2023',
-             'area': 'World',
-             'currency': 'RUR',
-             'salary_fom': 1000,
-             'salary_to': 1000,
-             'url': 'https://api.superjob.ru/'
-             }]
+    return [{'HH_0003': {'service': 'HeadHunter',
+                         'title': 'Тест vacancy_4',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://dev.hh.ru/'
+                         }},
+            {'SJ_0002': {'service': 'SuperJob',
+                         'title': 'Тест vacancy_5',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://api.superjob.ru/'
+                         }},
+            {'SJ_0003': {'service': 'SuperJob',
+                         'title': 'Тест vacancy_6',
+                         'date': '01.09.2023',
+                         'area': 'World',
+                         'currency': 'RUR',
+                         'salary_fom': 1000,
+                         'salary_to': 1000,
+                         'url': 'https://api.superjob.ru/'
+                         }}]

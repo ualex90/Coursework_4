@@ -13,17 +13,17 @@ if __name__ == '__main__':
     # hh.get_vacancies('АСУТП')
     # sj.get_vacancies('АСУТП')
 
-    # print(hh.get_vacancies('АСУТП', page_limit=10))
+    # print(hh.get_vacancies('АСУТП', page_limit=2))
     # print(sj.get_vacancies('АСУТП'))
 
-    # for item in hh.get_vacancies('Python', page_limit=None, write_json=True):
-    #     print(Vacancy(**item))
+    # for item in hh.get_vacancies('Python', page_limit=2, write_json=True):
+    #     print(Vacancy(item))
     # for item in sj.get_vacancies('АСУТП', write_json=True):
-    #     print(Vacancy(**item))
+    #     print(Vacancy(item))
 
     vacancies = Vacancies()
     json_saver = JSONSaver('test.json')
     # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
     vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=1), log=True)
-
+    #
     json_saver.save(vacancies)

@@ -8,7 +8,7 @@ class Vacancies:
     def add_vacancies(self, data: list[dict], log=False) -> None:
         count = 0
         for item in data:
-            self.data.append(Vacancy(**item))
+            self.data.append(Vacancy(item))
             count += 1
         self.print_log(count) if log else None
 

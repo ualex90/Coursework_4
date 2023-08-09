@@ -100,14 +100,13 @@ class HeadHunterAPI(API):
                 salary_to: int = 0
             url: str = item.get('alternate_url')
 
-            normal.append({'service': 'HeadHunter',
-                           'vacancy_id': vacancy_id,
-                           'title': name,
-                           'date': date,
-                           'area': area,
-                           'currency': currency,
-                           'salary_fom': salary_from,
-                           'salary_to': salary_to,
-                           'url': url
-                           })
+            normal.append({vacancy_id: {'service': 'HeadHunter',
+                                        'title': name,
+                                        'date': date,
+                                        'area': area,
+                                        'currency': currency,
+                                        'salary_fom': salary_from,
+                                        'salary_to': salary_to,
+                                        'url': url
+                                        }})
         return normal

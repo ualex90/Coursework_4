@@ -97,14 +97,13 @@ class SuperJobAPI(API):
                 salary_from: int = 0
             url: str = item.get('link')
 
-            normal.append({'service': 'SuperJob',
-                           'vacancy_id': vacancy_id,
-                           'title': name,
-                           'date': date,
-                           'area': area,
-                           'currency': currency,
-                           'salary_fom': salary_from,
-                           'salary_to': salary_to,
-                           'url': url
-                           })
+            normal.append({vacancy_id: {'service': 'SuperJob',
+                                        'title': name,
+                                        'date': date,
+                                        'area': area,
+                                        'currency': currency,
+                                        'salary_fom': salary_from,
+                                        'salary_to': salary_to,
+                                        'url': url
+                                        }})
         return normal
