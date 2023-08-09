@@ -44,12 +44,12 @@ def test_normalization_data(sj, in_area, in_date, currency, in_salary_from, in_s
                  'link': 'https://api.superjob.ru/'
                  }])
     out_data = sj.normalization_data(in_data)
-    assert out_data == ([{'SJ_1111': {'service': 'SuperJob',
-                                      'title': 'Тест метода нормализации данных',
-                                      'date': out_date,
-                                      'area': out_area,
-                                      'currency': out_currency,
-                                      'salary_fom': out_salary_from,
-                                      'salary_to': out_salary_to,
-                                      'url': 'https://api.superjob.ru/'
-                                      }}])
+    assert out_data == {'SJ_1111': {'service': 'SuperJob',
+                                    'title': 'Тест метода нормализации данных',
+                                    'date': out_date,
+                                    'area': out_area,
+                                    'currency': out_currency,
+                                    'salary_fom': out_salary_from,
+                                    'salary_to': out_salary_to,
+                                    'url': 'https://api.superjob.ru/'
+                                    }}

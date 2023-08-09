@@ -12,7 +12,7 @@ class HeadHunterAPI(API):
         self.response_file = HH_RESPONSE
 
     def get_vacancies(self, search_query: str, area=None, page=None,
-                      per_page=50, page_limit=None, write_json=False) -> list[dict]:
+                      per_page=50, page_limit=None, write_json=False) -> dict:
         """
         Возвращает список вакансий по запросу.
         Можно за раз получить не более 2000 вакансий
@@ -63,7 +63,7 @@ class HeadHunterAPI(API):
         return self.normalization_data(vacancies)
 
     @staticmethod
-    def normalization_data(vacancies: list[dict], **kwargs) -> list[dict]:
+    def normalization_data(vacancies: list[dict], **kwargs) -> dict:
         """
         Приведение полученных данных о вакансиях
         в формате HeadHunter к формату приложения
@@ -71,7 +71,7 @@ class HeadHunterAPI(API):
         :param vacancies: исходные данные о вакансиях HeadHunter
         :return:
         """
-        normal = list()
+        normal = dict()
         for item in vacancies:
             vacancy_id: str = f'HH_{item.get("id")}'
             name: str = item.get('name')
@@ -100,13 +100,13 @@ class HeadHunterAPI(API):
                 salary_to: int = 0
             url: str = item.get('alternate_url')
 
-            normal.append({vacancy_id: {'service': 'HeadHunter',
-                                        'title': name,
-                                        'date': date,
-                                        'area': area,
-                                        'currency': currency,
-                                        'salary_fom': salary_from,
-                                        'salary_to': salary_to,
-                                        'url': url
-                                        }})
+            normal[vacancy_id] = {'service': 'HeadHunter',
+                                  'title': name,
+                                  'date': date,
+                                  'area': area,
+                                  'currency': currency,
+                                  'salary_fom': salary_from,
+                                  'salary_to': salary_to,
+                                  'url': url
+                                  }
         return normal

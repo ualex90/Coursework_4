@@ -13,7 +13,7 @@ class SuperJobAPI(API):
         self.response_file = SJ_RESPONSE
 
     def get_vacancies(self, search_query: str, page=None, per_page=100,
-                      page_limit=None, write_json=False) -> list[dict]:
+                      page_limit=None, write_json=False) -> dict:
         """
         Возвращает список вакансий по запросу
 
@@ -65,7 +65,7 @@ class SuperJobAPI(API):
         return self.normalization_data(vacancies)
 
     @staticmethod
-    def normalization_data(vacancies: list[dict], **kwargs) -> list[dict]:
+    def normalization_data(vacancies: list[dict], **kwargs) -> dict:
         """
         Приведение полученных данных о вакансиях
         в формате SuperJob к формату приложения
@@ -73,7 +73,7 @@ class SuperJobAPI(API):
         :param vacancies: исходные данные о вакансиях HeadHunter
         :return:
         """
-        normal = list()
+        normal = dict()
         for item in vacancies:
             vacancy_id: str = f'SJ_{item.get("id")}'
             name: str = item.get('profession')
@@ -97,13 +97,13 @@ class SuperJobAPI(API):
                 salary_from: int = 0
             url: str = item.get('link')
 
-            normal.append({vacancy_id: {'service': 'SuperJob',
-                                        'title': name,
-                                        'date': date,
-                                        'area': area,
-                                        'currency': currency,
-                                        'salary_fom': salary_from,
-                                        'salary_to': salary_to,
-                                        'url': url
-                                        }})
+            normal[vacancy_id] = {'service': 'SuperJob',
+                                  'title': name,
+                                  'date': date,
+                                  'area': area,
+                                  'currency': currency,
+                                  'salary_fom': salary_from,
+                                  'salary_to': salary_to,
+                                  'url': url
+                                  }
         return normal

@@ -25,11 +25,7 @@ class JSONSaver:
                                      }
         return data
 
-    @staticmethod
-    def normalization_data(data) -> dict:
-        pass
-
-    def load(self, update=True) -> dict:
+    def load(self) -> dict:
         """
         Чтение файла
         :return:
@@ -39,9 +35,7 @@ class JSONSaver:
                 data = json.load(json_file)
         except JSONDecodeError:
             return dict()
-        if update:
-            return data
-        return self.normalization_data(data)
+        return data
 
     def save(self, vacancies: Vacancies):
         """

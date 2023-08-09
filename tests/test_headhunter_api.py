@@ -44,12 +44,12 @@ def test_normalization_data(hh, in_area, in_date, salary,
                  'alternate_url': 'https://dev.hh.ru/'
                  }])
     out_data = hh.normalization_data(in_data)
-    assert out_data == ([{'HH_1111': {'service': 'HeadHunter',
-                                      'title': 'Тест метода нормализации данных',
-                                      'date': out_date,
-                                      'area': out_area,
-                                      'currency': out_currency,
-                                      'salary_fom': out_salary_from,
-                                      'salary_to': out_salary_to,
-                                      'url': 'https://dev.hh.ru/'
-                                      }}])
+    assert out_data == {'HH_1111': {'service': 'HeadHunter',
+                                    'title': 'Тест метода нормализации данных',
+                                    'date': out_date,
+                                    'area': out_area,
+                                    'currency': out_currency,
+                                    'salary_fom': out_salary_from,
+                                    'salary_to': out_salary_to,
+                                    'url': 'https://dev.hh.ru/'
+                                    }}

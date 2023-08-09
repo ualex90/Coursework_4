@@ -5,10 +5,10 @@ class Vacancies:
     def __init__(self):
         self.data = list()
 
-    def add_vacancies(self, data: list[dict], log=False) -> None:
+    def add_vacancies(self, data: dict, log=False) -> None:
         count = 0
-        for item in data:
-            self.data.append(Vacancy(item))
+        for key, value in data.items():
+            self.data.append(Vacancy({key: value}))
             count += 1
         self.print_log(count) if log else None
 
