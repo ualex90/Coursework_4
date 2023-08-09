@@ -1,9 +1,9 @@
 class Vacancy:
-    __slots__ = ('service', 'vacancy_id', 'name',
+    __slots__ = ('service', 'vacancy_id', 'title',
                  'date', 'area', 'currency',
                  'salary_fom', 'salary_to', 'url')
 
-    def __init__(self, service: str, vacancy_id: int, name: str,
+    def __init__(self, service: str, vacancy_id: int, title: str,
                  date: str, area: str, currency: str,
                  salary_fom: int, salary_to: int, url: str):
         """
@@ -11,7 +11,7 @@ class Vacancy:
 
         :param service: Сервис на котором размещена вакансия
         :param vacancy_id: id
-        :param name: Название вакансии
+        :param title: Название вакансии
         :param date: Дата размещения
         :param area: Регион
         :param currency: Валюта
@@ -22,7 +22,7 @@ class Vacancy:
 
         self.service = service
         self.vacancy_id = vacancy_id
-        self.name = name
+        self.title = title
         self.date = date
         self.area = area
         self.currency = currency
@@ -31,7 +31,7 @@ class Vacancy:
         self.url = url
 
     def __str__(self):
-        return f'''Название: "{self.name}"
+        return f'''Название: "{self.title}"
 Регион: {self.area}
 Зарплата: {str(self.salary_to) + " " + self.currency if self.salary_to else 'Не указана'}
 Ссылка: {self.url}

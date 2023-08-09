@@ -46,7 +46,7 @@ def test_normalization_data(hh, in_area, in_date, salary,
     out_data = hh.normalization_data(in_data)
     assert out_data == ([{'service': 'HeadHunter',
                           'vacancy_id': 'HH_1111',
-                          'name': 'Тест метода нормализации данных',
+                          'title': 'Тест метода нормализации данных',
                           'date': out_date,
                           'area': out_area,
                           'currency': out_currency,

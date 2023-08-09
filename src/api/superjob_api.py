@@ -99,7 +99,7 @@ class SuperJobAPI(API):
 
             normal.append({'service': 'SuperJob',
                            'vacancy_id': vacancy_id,
-                           'name': name,
+                           'title': name,
                            'date': date,
                            'area': area,
                            'currency': currency,

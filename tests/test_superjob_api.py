@@ -46,7 +46,7 @@ def test_normalization_data(sj, in_area, in_date, currency, in_salary_from, in_s
     out_data = sj.normalization_data(in_data)
     assert out_data == ([{'service': 'SuperJob',
                           'vacancy_id': 'SJ_1111',
-                          'name': 'Тест метода нормализации данных',
+                          'title': 'Тест метода нормализации данных',
                           'date': out_date,
                           'area': out_area,
                           'currency': out_currency,

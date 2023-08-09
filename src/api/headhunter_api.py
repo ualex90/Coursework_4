@@ -102,7 +102,7 @@ class HeadHunterAPI(API):
 
             normal.append({'service': 'HeadHunter',
                            'vacancy_id': vacancy_id,
-                           'name': name,
+                           'title': name,
                            'date': date,
                            'area': area,
                            'currency': currency,
