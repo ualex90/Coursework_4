@@ -7,6 +7,7 @@ from src.vacancies.vacancy import Vacancy
 if __name__ == '__main__':
     hh = HeadHunterAPI()
     sj = SuperJobAPI()
+    vacancies = Vacancies()
 
     # hh.get_vacancies('АСУТП', write_json=True)
 
@@ -21,10 +22,10 @@ if __name__ == '__main__':
     # for item in sj.get_vacancies('АСУТП', write_json=True):
     #     print(Vacancy(item))
 
-    vacancies = Vacancies()
     json_saver = JSONSaver('test.json')
     # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
     # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=1), log=True)
     # json_saver.save(vacancies)
     vacancies.add_vacancies(json_saver.load(), log=True)
 
+    print(vacancies.list)

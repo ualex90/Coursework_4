@@ -1,21 +1,21 @@
 class Vacancy:
 
-    def __init__(self, data: dict):
+    __slots__ = ('vacancy_id', 'service', 'title', 'date', 'area', 'currency', 'salary_fom', 'salary_to', 'url')
+
+    def __init__(self, vacancy_id: str, service: str, title: str, date: str, area: str,
+                 currency: str, salary_fom: int, salary_to: int, url: str) -> None:
         """
         Инициализация
         """
-        key = tuple(data.keys())[0]
-        value = tuple(data.values())[0]
-
-        self.vacancy_id = key
-        self.service = value.get('service')
-        self.title = value.get('title')
-        self.date = value.get('date')
-        self.area = value.get('area')
-        self.currency = value.get('currency')
-        self.salary_fom = value.get('salary_fom')
-        self.salary_to = value.get('salary_to')
-        self.url = value.get('url')
+        self.vacancy_id = vacancy_id
+        self.service = service
+        self.title = title
+        self.date = date
+        self.area = area
+        self.currency = currency
+        self.salary_fom = salary_fom
+        self.salary_to = salary_to
+        self.url = url
 
     def __str__(self):
         return f'''Название: "{self.title}"

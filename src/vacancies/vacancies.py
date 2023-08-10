@@ -3,17 +3,34 @@ from src.vacancies.vacancy import Vacancy
 
 class Vacancies:
     def __init__(self):
-        self.data = list()
+        self.list = list()
 
-    def add_vacancies(self, data: dict, log=False) -> None:
+    def add_vacancies(self, data: dict, log=False):
         count = 0
         for key, value in data.items():
-            self.data.append(Vacancy({key: value}))
+            self.list.append(Vacancy(key,
+                                     value.get('service'),
+                                     value.get('title'),
+                                     value.get('date'),
+                                     value.get('area'),
+                                     value.get('currency'),
+                                     value.get('salary_fom'),
+                                     value.get('salary_to'),
+                                     value.get('url')
+                                     ))
             count += 1
-        self.print_log(count) if log else None
+        if log:
+            self.__print_log(count)
+        return count
 
-    def print_log(self, count) -> None:
+    def __print_log(self, count) -> None:
+        """
+        Вывод в консоль иформации о количестве
+        вакансий добавленных в список вакансий
+        :param count:
+        :return:
+        """
         print('------------------------------------------')
         print(f'Добавлено вакансий: {count}')
-        print(f'Вакансий в базе: {len(self.data)}')
+        print(f'Вакансий в базе: {len(self.list)}')
         print('------------------------------------------')
