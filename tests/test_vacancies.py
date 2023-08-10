@@ -17,4 +17,3 @@ def test_add_vacancies(vacancies, vacancies_dict_1, vacancies_dict_2, vacancies_
     assert vacancies.list[3].vacancy_id == 'HH_0003'
     assert vacancies.list[4].vacancy_id == 'SJ_0002'
     assert vacancies.list[5].vacancy_id == 'SJ_0003'
-

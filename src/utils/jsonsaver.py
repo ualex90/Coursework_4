@@ -13,7 +13,7 @@ class JSONSaver:
     @staticmethod
     def make_json(vacancies: Vacancies) -> dict:
         data = dict()
-        for item in vacancies.data:
+        for item in vacancies.list:
             data[item.vacancy_id] = {'service': item.service,
                                      'title': item.title,
                                      'date': item.date,
