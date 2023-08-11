@@ -46,7 +46,7 @@ class SuperJobAPI(API):
         if response.get('total'):
             if page is None:
                 params["page"] = 0
-                while params["page"] != page_limit:
+                while params["page"] < page_limit:
                     print(f'\rПолучение данных (станица {params["page"] + 1} из {page_limit})', end='')
                     response = requests.get(url, headers=headers, params=params).json()
                     vacancies.extend(response.get("objects"))

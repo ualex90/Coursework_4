@@ -43,10 +43,11 @@ class HeadHunterAPI(API):
         if response.get('pages'):
             if page is None:
                 params["page"] = 0
-                while response.get('page') != (page_limit - 1):
+                while response.get('page') < page_limit:
                     print(f'\rПолучение данных (станица {params["page"] + 1} из {page_limit})', end='')
                     response = requests.get(url, params).json()
                     vacancies.extend(response.get('items'))
+                    response['page'] += 1
                     params["page"] += 1
                 print('\rHeadHunter - Ok')
             else:

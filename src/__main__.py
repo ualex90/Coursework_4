@@ -15,16 +15,16 @@ if __name__ == '__main__':
     sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
 
     # # Получение вакансий
-    # print(hh.get_vacancies('АСУТП', page_limit=2, source=False))
-    # print(sj.get_vacancies('АСУТП', page_limit=2, source=False))
+    # print(hh.get_vacancies('АСУТП', page_limit=1, source=False))
+    # print(sj.get_vacancies('АСУТП', page_limit=1, source=False))
 
-    # Добавление полученных вакансий в список
-    # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
-    # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=2), log=True)
+    # # Добавление полученных вакансий в список
+    # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=1), log=True)
+    # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=1), log=True)
 
     # # Сохранение исходных данных в файл
-    # hh_source.save(hh.get_vacancies('АСУТП', page_limit=2, source=True))
-    # sj_source.save(sj.get_vacancies('АСУТП', page_limit=2, source=True))
+    # hh_source.save(hh.get_vacancies('АСУТП', page_limit=1, source=True))
+    # sj_source.save(sj.get_vacancies('АСУТП', page_limit=1, source=True))
 
     # Сохранение данных о вакансиях в JSON файл
     # json_manager.save_vacancies(vacancies)
