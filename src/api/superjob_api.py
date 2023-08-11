@@ -1,5 +1,4 @@
 import math
-
 import requests
 from datetime import datetime
 

@@ -13,5 +13,5 @@ class FileManager(ABC):
         pass
 
     @abstractmethod
-    def save(self, data):
+    def save(self, data, mode):
         pass

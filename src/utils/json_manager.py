@@ -35,9 +35,19 @@ class JSONManager(FileManager):
             return dict()
         return data
 
-    def save(self, vacancies: Vacancies):
+    def save(self, data, mode='w'):
         """
-        Обновление файла
+        Сохранение произвольных данных в файл
+        :param data:
+        :param mode:
+        :return:
+        """
+        with open(self.file, mode, encoding='UTF-8') as json_file:
+            json.dump(data, json_file, ensure_ascii=False, indent=4)
+
+    def save_vacancies(self, vacancies: Vacancies):
+        """
+        Обновление файла с вакансиями из списка вакансий
         """
         if Path(self.file).exists():
             data = self.load()

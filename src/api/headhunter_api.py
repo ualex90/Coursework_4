@@ -1,6 +1,5 @@
-from datetime import datetime
-
 import requests
+from datetime import datetime
 
 from settings import HH_RESPONSE
 from src.api.api import API
