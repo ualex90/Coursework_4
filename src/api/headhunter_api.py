@@ -12,7 +12,7 @@ class HeadHunterAPI(API):
         self.response_file = HH_RESPONSE
 
     def get_vacancies(self, search_query: str, area=None, page=None,
-                      per_page=50, page_limit=None, write_json=False) -> dict:
+                      per_page=50, page_limit=None, source=False) -> dict:
         """
         Возвращает список вакансий по запросу.
         Можно за раз получить не более 2000 вакансий
@@ -22,7 +22,7 @@ class HeadHunterAPI(API):
         :param page: Страница ответа
         :param per_page: Количество вакансий на странице (не более 50)
         :param page_limit: Максимальное количество страниц (максимум 40 при per_page=50)
-        :param write_json: True - если необходимо сохранить ответ сервиса в файл
+        :param source: True - если необходимо сохранить ответ сервиса в файл
         :return:
         """
         # Инициализация запроса
@@ -53,12 +53,10 @@ class HeadHunterAPI(API):
             else:
                 vacancies = response.get('items')
                 print('HeadHunter - Ok')
-
-            if write_json:
-                self.write_yaml(vacancies)
         else:
             print('HeadHunter - Отсутствуют вакансии по запросу')
-
+        if source:
+            return vacancies
         # Возврат нормализованного списка
         return self.normalization_data(vacancies)
 

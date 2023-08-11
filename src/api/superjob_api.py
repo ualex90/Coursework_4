@@ -13,7 +13,7 @@ class SuperJobAPI(API):
         self.response_file = SJ_RESPONSE
 
     def get_vacancies(self, search_query: str, page=None, per_page=100,
-                      page_limit=None, write_json=False) -> dict:
+                      page_limit=None, source=False) -> dict:
         """
         Возвращает список вакансий по запросу
 
@@ -21,7 +21,7 @@ class SuperJobAPI(API):
         :param page: Страница ответа
         :param per_page: Количество вакансий на странице (не более 100)
         :param page_limit: Максимальное количество страниц (не более 500)
-        :param write_json: True - если необходимо сохранить ответ сервиса в файл
+        :param source: True - если необходимо вернуть полученные данные в исходном виде
         :return:
         """
 
@@ -56,12 +56,10 @@ class SuperJobAPI(API):
             else:
                 vacancies = response.get("objects")
                 print('SuperJob - Ok')
-
-            if write_json:
-                self.write_yaml(vacancies)
         else:
             print('SuperJob - Отсутствуют вакансии по запросу')
-
+        if source:
+            return vacancies
         return self.normalization_data(vacancies)
 
     @staticmethod

@@ -11,8 +11,8 @@ if __name__ == '__main__':
     json_saver = JSONManager('test.json')  # объект для сохранения и чтения вакансий из файла
 
     # # Получение вакансий
-    # print(hh.get_vacancies('АСУТП', page_limit=2, write_json=False))
-    # print(sj.get_vacancies('АСУТП', page_limit=1, write_json=False))
+    print(hh.get_vacancies('АСУТП', page_limit=2, source=False))
+    print(sj.get_vacancies('АСУТП', page_limit=1, source=False))
 
     # # Добавление полученных вакансий в список
     # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
