@@ -1,7 +1,7 @@
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
-from src.utils.json_manager import JSONManager
-from src.utils.yaml_manager import YAMLManager
+from src.utils.file_manager import JSONManager
+from src.utils.file_manager import YAMLManager
 from src.vacancies.vacancies import Vacancies
 from src.vacancies.vacancy import Vacancy
 
@@ -22,13 +22,13 @@ if __name__ == '__main__':
     # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
     # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=1), log=True)
 
-    # Сохранение исходных данных в YAML файл
-    hh_source.save(hh.get_vacancies('АСУТП', source=True))
-    sj_source.save(sj.get_vacancies('АСУТП', source=True))
+    # # Сохранение исходных данных в YAML файл
+    # hh_source.save(hh.get_vacancies('АСУТП', source=True))
+    # sj_source.save(sj.get_vacancies('АСУТП', source=True))
 
     # # Сохранение данных о вакансиях в JSON файл
     # json_manager.save_vacancies(vacancies)
 
     # Добавление вакансий в список из файла
-    # vacancies.add_vacancies(json_manager.load(), log=True)
-    # print(vacancies.list)
+    vacancies.add_vacancies(json_manager.load(), log=True)
+    print(vacancies.list)
