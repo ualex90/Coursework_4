@@ -19,15 +19,15 @@ if __name__ == '__main__':
     # print(sj.get_vacancies('АСУТП', page_limit=2, source=False))
 
     # Добавление полученных вакансий в список
-    vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
-    vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=2), log=True)
+    # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
+    # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=2), log=True)
 
     # # Сохранение исходных данных в файл
     # hh_source.save(hh.get_vacancies('АСУТП', page_limit=2, source=True))
     # sj_source.save(sj.get_vacancies('АСУТП', page_limit=2, source=True))
 
     # Сохранение данных о вакансиях в JSON файл
-    json_manager.save_vacancies(vacancies)
+    # json_manager.save_vacancies(vacancies)
 
     # # Добавление вакансий в список из файла
     # vacancies.add_vacancies(json_manager.load(), log=True)

@@ -45,7 +45,8 @@ def vacancy_2():
                    'RUR',
                    0,
                    0,
-                   'https://api.superjob.ru/'
+                   'https://api.superjob.ru/',
+                   True
                    )
 
 
@@ -58,7 +59,9 @@ def vacancies_dict_1():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://dev.hh.ru/'
+                        'url': 'https://dev.hh.ru/',
+                        'is_favorite': False,
+                        'is_to_removed': False
                         }}
 
 
@@ -71,7 +74,9 @@ def vacancies_dict_2():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://dev.hh.ru/'
+                        'url': 'https://dev.hh.ru/',
+                        'is_favorite': False,
+                        'is_to_removed': False
                         },
             'SJ_0001': {'service': 'SuperJob',
                         'vacancy_id': 'SJ_0001',
@@ -81,7 +86,9 @@ def vacancies_dict_2():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://api.superjob.ru/'
+                        'url': 'https://api.superjob.ru/',
+                        'is_favorite': False,
+                        'is_to_removed': False
                         }}
 
 
@@ -94,7 +101,9 @@ def vacancies_dict_3():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://dev.hh.ru/'
+                        'url': 'https://dev.hh.ru/',
+                        'is_favorite': True,
+                        'is_to_removed': False
                         },
             'SJ_0002': {'service': 'SuperJob',
                         'title': 'Тест vacancy_5',
@@ -103,7 +112,9 @@ def vacancies_dict_3():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://api.superjob.ru/'
+                        'url': 'https://api.superjob.ru/',
+                        'is_favorite': False,
+                        'is_to_removed': False
                         },
             'SJ_0003': {'service': 'SuperJob',
                         'title': 'Тест vacancy_6',
@@ -112,5 +123,7 @@ def vacancies_dict_3():
                         'currency': 'RUR',
                         'salary_fom': 1000,
                         'salary_to': 1000,
-                        'url': 'https://api.superjob.ru/'
+                        'url': 'https://api.superjob.ru/',
+                        'is_favorite': False,
+                        'is_to_removed': True
                         }}
