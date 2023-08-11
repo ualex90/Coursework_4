@@ -30,5 +30,5 @@ if __name__ == '__main__':
     # json_manager.save_vacancies(vacancies)
 
     # # Добавление вакансий в список из файла
-    # vacancies.add_vacancies(json_manager.load(), log=True)
-    # print(vacancies.list)
+    vacancies.add_vacancies(json_manager.load(), log=True)
+    vacancies.sorted('title')
