@@ -2,13 +2,11 @@ import json
 from json import JSONDecodeError
 from pathlib import Path
 
-from settings import FIXTURES
+from src.utils.file_manager import FileManager
 from src.vacancies.vacancies import Vacancies
 
 
-class JSONSaver:
-    def __init__(self, file_name):
-        self.file = Path(FIXTURES, file_name)
+class JSONManager(FileManager):
 
     @staticmethod
     def make_json(vacancies: Vacancies) -> dict:
