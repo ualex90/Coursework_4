@@ -42,7 +42,8 @@ class JSONManager(FileManager):
                                      'currency': item.currency,
                                      'salary_fom': item.salary_fom,
                                      'salary_to': item.salary_to,
-                                     'url': item.url
+                                     'url': item.url,
+                                     'is_favorite': item.is_favorite
                                      }
         return data
 

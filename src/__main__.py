@@ -11,24 +11,24 @@ if __name__ == '__main__':
     vacancies = Vacancies()  # объект для добавления вакансий в список
     json_manager = JSONManager('test.json')  # объект для сохранения и чтения данных JSON
     yaml_manager = YAMLManager('test.yaml')  # объект для сохранения и чтения данных YAML
-    hh_source = JSONManager('hh_source.json')  # объект для сохранения исходных данных HH в JSON
-    sj_source = JSONManager('sj_source.json')  # объект для сохранения исходных данных SJ в JSON
+    hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
+    sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
 
     # # Получение вакансий
     # print(hh.get_vacancies('АСУТП', page_limit=2, source=False))
-    # print(sj.get_vacancies('АСУТП', page_limit=1, source=False))
+    # print(sj.get_vacancies('АСУТП', page_limit=2, source=False))
 
-    # # Добавление полученных вакансий в список
-    # vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
-    # vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=1), log=True)
+    # Добавление полученных вакансий в список
+    vacancies.add_vacancies(hh.get_vacancies('АСУТП', page_limit=2), log=True)
+    vacancies.add_vacancies(sj.get_vacancies('АСУТП', page_limit=2), log=True)
 
-    # # Сохранение исходных данных в YAML файл
-    # hh_source.save(hh.get_vacancies('АСУТП', source=True))
-    # sj_source.save(sj.get_vacancies('АСУТП', source=True))
+    # # Сохранение исходных данных в файл
+    # hh_source.save(hh.get_vacancies('АСУТП', page_limit=2, source=True))
+    # sj_source.save(sj.get_vacancies('АСУТП', page_limit=2, source=True))
 
-    # # Сохранение данных о вакансиях в JSON файл
-    # json_manager.save_vacancies(vacancies)
+    # Сохранение данных о вакансиях в JSON файл
+    json_manager.save_vacancies(vacancies)
 
-    # Добавление вакансий в список из файла
-    vacancies.add_vacancies(json_manager.load(), log=True)
-    print(vacancies.list)
+    # # Добавление вакансий в список из файла
+    # vacancies.add_vacancies(json_manager.load(), log=True)
+    # print(vacancies.list)
