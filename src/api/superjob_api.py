@@ -2,14 +2,14 @@ import math
 import requests
 from datetime import datetime
 
-from settings import SJ_RESPONSE, SJ_KEY
+from settings import SJ_SOURCE, SJ_KEY
 from src.api.api import API
 
 
 class SuperJobAPI(API):
     def __init__(self):
         super().__init__()
-        self.response_file = SJ_RESPONSE
+        self.response_file = SJ_SOURCE
 
     def get_vacancies(self, search_query: str, page=None, per_page=100,
                       page_limit=None, source=False) -> dict:

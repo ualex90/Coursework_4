@@ -1,14 +1,14 @@
 import requests
 from datetime import datetime
 
-from settings import HH_RESPONSE
+from settings import HH_SOURCE
 from src.api.api import API
 
 
 class HeadHunterAPI(API):
     def __init__(self):
         super().__init__()
-        self.response_file = HH_RESPONSE
+        self.response_file = HH_SOURCE
 
     def get_vacancies(self, search_query: str, area=None, page=None,
                       per_page=50, page_limit=None, source=False) -> dict:

@@ -39,4 +39,4 @@ if __name__ == '__main__':
     # [print(i) for i in result]
 
     # user = yaml_manager.load()
-    # ui = UI()
+    ui = UI()
