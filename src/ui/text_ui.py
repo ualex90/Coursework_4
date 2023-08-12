@@ -7,9 +7,11 @@ from src.user.user import User
 
 class TextUI(UI):
     """Пользовательский интерфейс"""
+
     def main(self):
-        """главный диалог"""
+        """главный метод UI"""
         self.user = self.get_user()
+        self.main_menu()
 
     def get_user(self) -> User:
         """
@@ -29,6 +31,12 @@ class TextUI(UI):
         user = User(name=input('Введите свое имя: '))
         print('-' * (len(greetings) + 1), '\n')
         return user
+
+    def main_menu(self):
+        print('<Что будем делать?>')
+        print('1. Настраивать параметры программы\n'
+              '2. Искать вакансий на выбранных площадках\n'
+              '3. Искать в сохраненной базе данных')
 
 
 if __name__ == '__main__':
