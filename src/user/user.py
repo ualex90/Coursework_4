@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from settings import USER
 from src.utils.file_manager import YAMLManager
 
