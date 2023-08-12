@@ -29,7 +29,7 @@ class Vacancies:
             self.__print_log(count)
         return count
 
-    def sorted(self, attribute, reverse=False):
+    def sorted(self, attribute, reverse=False) -> str:
         """
         Сортировка списка вакансий по аттрибуту
         Можно задать только 1 аттрибут для сортировки
@@ -54,11 +54,20 @@ class Vacancies:
             case 'favorite':
                 self.list.sort(key=lambda x: x.is_favorite, reverse=reverse)
             case _:
-                return None
-
-        [print(i) for i in self.list]
-
+                return 'Failed'
         return 'Ok'
+
+    def search(self, search_query: str) -> list:
+        """
+        Поиск по названию вакансии
+        :param search_query:
+        :return:
+        """
+        result = list()
+        for item in self.list:
+            if search_query.lower() in item.title.lower().replace(',', ''):
+                result.append(item)
+        return result
 
     def __print_log(self, count) -> None:
         """

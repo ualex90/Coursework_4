@@ -14,9 +14,12 @@ class FileManager(ABC):
     def __init__(self, file_name) -> None:
         """
         Инициализация
-        :param file_name: Имя файла
+        :param file_name: Имя файла (объект Path или имя файла строкой, который будет находится в папке fixtures
         """
-        self.file = Path(FIXTURES, file_name)
+        if isinstance(file_name, Path):
+            self.file = file_name
+        else:
+            self.file = Path(FIXTURES, file_name)
 
     @abstractmethod
     def load(self):
@@ -101,6 +104,8 @@ class YAMLManager(FileManager):
                 data = yaml.safe_load(yaml_file)
         except FileNotFoundError:
             print(f'Файл не найден {self.file}')
+            return dict()
+        if data is None:
             return dict()
         return data
 

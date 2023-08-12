@@ -2,6 +2,7 @@ import pytest
 
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
+from src.ui.ui import UI
 from src.vacancies.vacancies import Vacancies
 from src.vacancies.vacancy import Vacancy
 
@@ -127,3 +128,15 @@ def vacancies_dict_3():
                         'is_favorite': False,
                         'is_to_removed': True
                         }}
+
+
+@pytest.fixture
+def text_ui_1():
+    user = {'user_name': 'AnyKey'}
+    return UI(user)
+
+
+@pytest.fixture
+def text_ui_2():
+    user = dict()
+    return UI(user)
