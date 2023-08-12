@@ -1,8 +1,4 @@
 from abc import ABC, abstractmethod
-from pathlib import Path
-
-from settings import USER
-from src.user.user import User
 
 
 class UI(ABC):

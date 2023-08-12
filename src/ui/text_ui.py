@@ -17,14 +17,18 @@ class TextUI(UI):
         в противном случае создаем нового пользователя
         :return:
         """
-        print('Добро пожаловать в JobParser', end='')
+        greetings = 'Добро пожаловать в JobParser'
+        print(greetings, end='')
         if Path(USER).exists():
             user = User.init_yaml()
             if user.name:
                 print(f', {user.name}!')
+                print('-' * (len(greetings) + len(user.name) + 3), '\n')
                 return user
         print('!')
-        return User(name=input('Введите свое имя: '))
+        user = User(name=input('Введите свое имя: '))
+        print('-' * (len(greetings) + 1), '\n')
+        return user
 
 
 if __name__ == '__main__':
