@@ -6,14 +6,14 @@ class User:
     """Класс пользователь"""
     config = YAMLManager(USER)
 
-    def __init__(self, service=1, **kwargs):
+    def __init__(self, **kwargs):
         """
         Инициализация пользовательских параметров
         :param service: сервис для поиска (0: HH + SJ, 1: HH, 2: SJ)
         :param kwargs:
         """
         self.name = kwargs.get('name')
-        self._service = kwargs.get('_service') if kwargs.get('_service') else service
+        self._service = kwargs.get('_service') if kwargs.get('_service') else 1
         self.save_config()
 
     @property
