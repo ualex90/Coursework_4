@@ -3,13 +3,26 @@ import time
 from pathlib import Path
 
 from settings import USER
-from src.ui.ui import UI
+from src.api.headhunter_api import HeadHunterAPI
+from src.api.superjob_api import SuperJobAPI
 from src.user.user import User
-from src.vacancies import vacancies
+from src.utils.file_manager import JSONManager, YAMLManager
+from src.vacancies.vacancies import Vacancies
 
 
-class TextUI(UI):
+class TextUI:
     """Пользовательский интерфейс"""
+
+    def __init__(self):
+        self.hh = HeadHunterAPI()  # объект для работы с API HeadHunter
+        self.sj = SuperJobAPI()  # объект для работы с API HeadHunter
+        self.vacancies = Vacancies()  # объект для добавления вакансий в список
+        self.json_manager = JSONManager('test.json')  # объект для сохранения и чтения данных JSON
+        self.yaml_manager = YAMLManager('test.yaml')  # объект для сохранения и чтения данных YAML
+        self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
+        self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных
+        self.operating_system = os.name
+        self.user = None
 
     def main(self):
         """главный метод UI"""
@@ -82,7 +95,7 @@ class TextUI(UI):
                 self.main_menu()
 
     def search_settings(self):
-        """Выбор сервиса поска работы"""
+        """Выбор сервиса поиска работы"""
         if self.user.service == 1:
             label = [None, '>', ' ', ' ']
         elif self.user.service == 2:
