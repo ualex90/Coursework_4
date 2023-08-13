@@ -132,6 +132,7 @@ class TextUI:
                 self.search_settings()
 
     def search_in_service(self):
+        """Поиск вакансий в сети"""
         print('<Поиск работы на сервисах>')
         print('Для выхода в главное меню, введите "exit"\n'
               'Введите название вакансии:')
@@ -149,8 +150,7 @@ class TextUI:
                 case 3:
                     self.clear_screen()
                     self.vacancies.add_vacancies(self.sj.get_vacancies(request, page_limit=4), log=True)
-
-
+            input('Для продолжения работы, нажмите ENTER')
 
 
 if __name__ == '__main__':
