@@ -49,10 +49,10 @@ class HeadHunterAPI(API):
                     vacancies.extend(response.get('items'))
                     response['page'] += 1
                     params["page"] += 1
-                print('\rHeadHunter - Ok')
+                print('\rHeadHunter - Ok                                        ')
             else:
                 vacancies = response.get('items')
-                print('HeadHunter - Ok')
+                print('HeadHunter - Ok                                        ')
         else:
             print('HeadHunter - Отсутствуют вакансии по запросу')
         if source:

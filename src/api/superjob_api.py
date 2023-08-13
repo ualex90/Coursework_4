@@ -51,10 +51,10 @@ class SuperJobAPI(API):
                     response = requests.get(url, headers=headers, params=params).json()
                     vacancies.extend(response.get("objects"))
                     params["page"] += 1
-                print('\rSuperJob - Ok')
+                print('\rSuperJob - Ok                                        ')
             else:
                 vacancies = response.get("objects")
-                print('SuperJob - Ok')
+                print('SuperJob - Ok                                        ')
         else:
             print('SuperJob - Отсутствуют вакансии по запросу')
         if source:

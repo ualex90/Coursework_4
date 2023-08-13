@@ -1,3 +1,5 @@
+import os
+
 from src.vacancies.vacancy import Vacancy
 
 
@@ -76,7 +78,6 @@ class Vacancies:
         :param count:
         :return:
         """
-        print('------------------------------------------')
         print(f'Добавлено вакансий: {count}')
-        print(f'Вакансий в базе: {len(self.list)}')
+        print(f'Вакансий в списке: {len(self.list)}')
         print('------------------------------------------')
