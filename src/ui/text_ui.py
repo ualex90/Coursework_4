@@ -20,7 +20,7 @@ class TextUI:
         self.json_manager = JSONManager('test.json')  # объект для сохранения и чтения данных JSON
         self.yaml_manager = YAMLManager('test.yaml')  # объект для сохранения и чтения данных YAML
         self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
-        self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных
+        self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
         self.operating_system = os.name
         self.user = None
 
@@ -71,9 +71,10 @@ class TextUI:
         print('<Что нужно сделать?>')
         print('1. Настроить параметры поиска\n'
               '2. Найти вакансии в сети, на выбранных площадках\n'
-              '3. Найти вакансии в сохраненной базе данных\n'
+              '3. Найти вакансии в локальной базе данных\n'
               '4. Настроить программу\n'
-              '5. Выход из программы')
+              '5. Выход из программы'
+              )
         match input('>> '):
             case '1':
                 self.clear_screen()
@@ -109,7 +110,8 @@ class TextUI:
         print(f'{label[1]} 1. SuperJob + HeadHunter\n'
               f'{label[2]} 2. HeadHunter\n'
               f'{label[3]} 3. SuperJob\n'
-              f'  4. Назад, в главное меню')
+              f'  4. Назад, в главное меню'
+              )
         match input('>> '):
             case '1':
                 self.user.service = 1
@@ -135,7 +137,8 @@ class TextUI:
         """Поиск вакансий в сети"""
         print('<Поиск работы на сервисах>')
         print('Для выхода в главное меню, введите "exit"\n'
-              'Введите название вакансии:')
+              'Введите название вакансии:'
+              )
         if (request := input('>> ').lower().strip()) == 'exit':
             self.clear_screen()
             self.main_menu()
@@ -151,6 +154,34 @@ class TextUI:
                     self.clear_screen()
                     self.vacancies.add_vacancies(self.sj.get_vacancies(request, page_limit=4), log=True)
             input('Для продолжения работы, нажмите ENTER')
+            self.clear_screen()
+            self.menu_service_vacancies()
+
+    def menu_service_vacancies(self):
+        print('<Выберете подходящий вариант>')
+        print('1. Просмотр полученных вакансий\n'
+              '2. Новый поиск\n'
+              '3. Сохранить вакансии в локальную базу данных\n'
+              '4. Главное меню'
+              )
+        match input('>> '):
+            case '1':
+                self.clear_screen()
+            case '2':
+                self.clear_screen()
+                self.vacancies.list = []
+                self.search_in_service()
+            case '3':
+                self.clear_screen()
+                self.json_manager.save_vacancies(self.vacancies, log=True)
+                self.menu_service_vacancies()
+            case '4':
+                self.clear_screen()
+                self.main_menu()
+            case _:
+                self.clear_screen()
+                print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
+                self.menu_service_vacancies()
 
 
 if __name__ == '__main__':

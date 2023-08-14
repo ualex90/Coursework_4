@@ -76,20 +76,30 @@ class JSONManager(FileManager):
         with open(self.file, mode, encoding='UTF-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
 
-    def save_vacancies(self, vacancies: Vacancies):
+    def save_vacancies(self, vacancies: Vacancies, log=False) -> None:
         """
         Обновление файла с вакансиями из списка вакансий
+        :param vacancies: экземпляр класса с вакансиями
+        :param log: вывод сообщения о количестве записанных вакансий
         """
+        new_data = self.make_dict(vacancies)
         if Path(self.file).exists():
             data = self.load()
-            data.update(self.make_dict(vacancies))
+            n_old = len(data)
+            data.update(new_data)
             mode = 'w'
         else:
-            data = self.make_dict(vacancies)
+            n_old = 0
+            data = new_data
             mode = 'a'
 
         with open(self.file, mode, encoding='UTF-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
+        n_new = len(self.load())
+
+        if log:
+            msg = f'Добавлено вакансий: {n_new - n_old}. Всего в базе: {n_new}'
+            print(msg, '\n', '-' * len(msg))
 
 
 class YAMLManager(FileManager):
