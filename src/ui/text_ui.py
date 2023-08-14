@@ -83,7 +83,8 @@ class TextUI:
                 self.clear_screen()
                 self.search_in_service()
             case '3':
-                pass
+                self.clear_screen()
+                self.search_in_base()
             case '4':
                 pass
             case '5':
@@ -147,6 +148,7 @@ class TextUI:
                 case 1:
                     self.clear_screen()
                     self.vacancies.add_vacancies(self.hh.get_vacancies(request, page_limit=4), log=True)
+                    self.vacancies.add_vacancies(self.sj.get_vacancies(request, page_limit=4), log=True)
                 case 2:
                     self.clear_screen()
                     self.vacancies.add_vacancies(self.hh.get_vacancies(request, page_limit=4), log=True)
@@ -159,7 +161,7 @@ class TextUI:
 
     def menu_service_vacancies(self):
         print('<Выберете подходящий вариант>')
-        print('1. Просмотр полученных вакансий\n'
+        print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
               '3. Сохранить вакансии в локальную базу данных\n'
               '4. Главное меню'
@@ -182,6 +184,46 @@ class TextUI:
                 self.clear_screen()
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.menu_service_vacancies()
+
+    def search_in_base(self):
+        """Поиск вакансий в сети"""
+        self.vacancies.add_vacancies(self.json_manager.load())
+        print('<Поиск работы локальной базе данных>')
+        print(f'Всего вакансий в базе {len(self.vacancies)}')
+        print('Для выхода в главное меню, введите "exit"\n'
+              'Введите название вакансии:'
+              )
+        if (request := input('>> ').lower().strip()) == 'exit':
+            self.clear_screen()
+            self.main_menu()
+        else:
+            self.vacancies.list = self.vacancies.search(request)
+            self.clear_screen()
+            print(f'Найдено вакансий: {len(self.vacancies)}')
+            input('Для продолжения работы, нажмите ENTER')
+            self.clear_screen()
+            self.menu_base_vacancies()
+
+    def menu_base_vacancies(self):
+        print('<Выберете подходящий вариант>')
+        print('1. Просмотр вакансий\n'
+              '2. Новый поиск\n'
+              '3. Главное меню'
+              )
+        match input('>> '):
+            case '1':
+                self.clear_screen()
+            case '2':
+                self.clear_screen()
+                self.vacancies.list = []
+                self.search_in_base()
+            case '3':
+                self.clear_screen()
+                self.main_menu()
+            case _:
+                self.clear_screen()
+                print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
+                self.menu_base_vacancies()
 
 
 if __name__ == '__main__':

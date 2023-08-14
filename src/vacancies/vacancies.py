@@ -81,3 +81,6 @@ class Vacancies:
         print(f'Добавлено вакансий: {count}')
         print(f'Вакансий в списке: {len(self.list)}')
         print('------------------------------------------')
+
+    def __len__(self):
+        return len(self.list)
