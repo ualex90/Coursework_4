@@ -23,10 +23,12 @@ class TextUI:
         self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
         self.operating_system = os.name
         self.user = None
+        self.sorted = dict()
 
     def main(self):
         """главный метод UI"""
         self.user = self.get_user()
+        self.sorted = self.user.sort
         self.main_menu()
 
     def clear_screen(self):
@@ -98,14 +100,15 @@ class TextUI:
 
     def search_settings(self):
         """Выбор сервиса поиска работы"""
-        if self.user.service == 1:
-            label = [None, '>', ' ', ' ']
-        elif self.user.service == 2:
-            label = [None, ' ', '>', ' ']
-        elif self.user.service == 3:
-            label = [None, ' ', ' ', '>']
-        else:
-            label = [None, ' ', ' ', ' ']
+        match self.user.service:
+            case 1:
+                label = [None, '>', ' ', ' ']
+            case 2:
+                label = [None, ' ', '>', ' ']
+            case 3:
+                label = [None, ' ', ' ', '>']
+            case _:
+                label = [None, ' ', ' ', ' ']
 
         print('<Выбор сервиса поска работы>')
         print(f'{label[1]} 1. SuperJob + HeadHunter\n'
@@ -163,21 +166,26 @@ class TextUI:
         print('<Выберете подходящий вариант>')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
-              '3. Сохранить вакансии в локальную базу данных\n'
-              '4. Главное меню'
+              '3. Сортировка\n'
+              '4. Сохранить вакансии в локальную базу данных\n'
+              '5. Главное меню'
               )
         match input('>> '):
             case '1':
                 self.clear_screen()
+                self.view_result('service')
             case '2':
                 self.clear_screen()
                 self.vacancies.list = []
                 self.search_in_service()
             case '3':
                 self.clear_screen()
+                self.menu_sorted_result('service')
+            case '4':
+                self.clear_screen()
                 self.json_manager.save_vacancies(self.vacancies, log=True)
                 self.menu_service_vacancies()
-            case '4':
+            case '5':
                 self.clear_screen()
                 self.main_menu()
             case _:
@@ -208,22 +216,138 @@ class TextUI:
         print('<Выберете подходящий вариант>')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
-              '3. Главное меню'
+              '3. Сортировка\n'
+              '4. Главное меню'
               )
         match input('>> '):
             case '1':
                 self.clear_screen()
+                self.view_result('base')
             case '2':
                 self.clear_screen()
                 self.vacancies.list = []
                 self.search_in_base()
             case '3':
                 self.clear_screen()
+                self.menu_sorted_result('base')
+            case '4':
+                self.clear_screen()
                 self.main_menu()
             case _:
                 self.clear_screen()
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.menu_base_vacancies()
+
+    def menu_sorted_result(self, source: str):
+
+        match self.user.sort.get('attribute'):
+            case 'service':
+                label = [None, '>', ' ', ' ', ' ', ' ', ' ', ' ']
+            case 'title':
+                label = [None, ' ', '>', ' ', ' ', ' ', ' ', ' ']
+            case 'date':
+                label = [None, ' ', ' ', '>', ' ', ' ', ' ', ' ']
+            case 'area':
+                label = [None, ' ', ' ', ' ', '>', ' ', ' ', ' ']
+            case 'currency':
+                label = [None, ' ', ' ', ' ', ' ', '>', ' ', ' ']
+            case 'salary':
+                label = [None, ' ', ' ', ' ', ' ', ' ', '>', ' ']
+            case 'favorite':
+                label = [None, ' ', ' ', ' ', ' ', ' ', ' ', '>']
+            case _:
+                label = [None, ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+
+        if self.user.sort.get('reverse'):
+            label_r = [' ', '>']
+        else:
+            label_r = ['>', ' ']
+
+        print('<Сортировка>')
+        print(f'{label[1]} 1. По сервису\n'
+              f'{label[2]} 2. По названию\n'
+              f'{label[3]} 3. По дате публикации\n'
+              f'{label[4]} 4. По региону\n'
+              f'{label[5]} 5. По валюте\n'
+              f'{label[6]} 6. По зарплате\n'
+              f'{label[7]} 7. Сначала избранные вакансии\n'
+              f'{label_r[0]} 8. Отображать с начала\n'
+              f'{label_r[1]} 9. Отображать с конца\n'
+              '  10. Назад'
+              )
+        match input('>> '):
+            case '1':
+                self.sorted['attribute'] = 'service'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '2':
+                self.sorted['attribute'] = 'title'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '3':
+                self.sorted['attribute'] = 'date'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '4':
+                self.sorted['attribute'] = 'area'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '5':
+                self.sorted['attribute'] = 'currency'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '6':
+                self.sorted['attribute'] = 'salary'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '7':
+                self.sorted['attribute'] = 'favorite'
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '8':
+                self.sorted['reverse'] = False
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '9':
+                self.sorted['reverse'] = True
+                self.user.sort = self.sorted
+                self.clear_screen()
+                self.menu_sorted_result(source)
+            case '10':
+                self.clear_screen()
+                self.vacancies.sorted(**self.sorted)
+                if source == 'service':
+                    self.menu_service_vacancies()
+                elif source == 'base':
+                    self.menu_base_vacancies()
+                else:
+                    self.main_menu()
+            case _:
+                self.clear_screen()
+                print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
+                self.menu_base_vacancies()
+
+    def view_result(self, source: str):
+        try:
+            print(self.vacancies)
+        except TypeError:
+            pass
+        input()
+        self.clear_screen()
+        if source == 'service':
+            self.menu_service_vacancies()
+        elif source == 'base':
+            self.menu_base_vacancies()
+        else:
+            self.main_menu()
 
 
 if __name__ == '__main__':

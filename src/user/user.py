@@ -14,6 +14,7 @@ class User:
         """
         self.name = kwargs.get('name')
         self._service = kwargs.get('_service') if kwargs.get('_service') else 1
+        self._sort = kwargs.get('_sort') if kwargs.get('_sort') else {'attribute': 'date', 'reverse': False}
         self.save_config()
 
     @property
@@ -25,6 +26,15 @@ class User:
         if data in [1, 2, 3]:
             self._service = data
             self.save_config()
+
+    @property
+    def sort(self):
+        return self._sort
+
+    @sort.setter
+    def sort(self, data: dict):
+        self._sort = data
+        self.save_config()
 
     @classmethod
     def init_yaml(cls):
