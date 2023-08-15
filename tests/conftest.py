@@ -2,7 +2,7 @@ import pytest
 
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
-from src.ui.text_ui import TextUI
+from src.ui.main import TextUI
 from src.vacancies.vacancies import Vacancies
 from src.vacancies.vacancy import Vacancy
 

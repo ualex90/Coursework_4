@@ -1,19 +1,20 @@
-import os
 import time
 from pathlib import Path
 
 from settings import USER
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
+from src.ui.ui_utils import UIUtils
 from src.user.user import User
 from src.utils.file_manager import JSONManager, YAMLManager
 from src.vacancies.vacancies import Vacancies
 
 
-class TextUI:
+class TextUI(UIUtils):
     """Пользовательский интерфейс"""
 
     def __init__(self):
+        super().__init__()
         self.hh = HeadHunterAPI()  # объект для работы с API HeadHunter
         self.sj = SuperJobAPI()  # объект для работы с API HeadHunter
         self.vacancies = Vacancies()  # объект для добавления вакансий в список
@@ -21,7 +22,6 @@ class TextUI:
         self.yaml_manager = YAMLManager('test.yaml')  # объект для сохранения и чтения данных YAML
         self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
         self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
-        self.operating_system = os.name
         self.user = None
         self.sorted = dict()
 
@@ -30,16 +30,6 @@ class TextUI:
         self.user = self.get_user()
         self.sorted = self.user.sort
         self.main_menu()
-
-    def clear_screen(self):
-        """
-        Отправка команды на очистку экрана консоли
-        в зависимости от операционной системы
-        """
-        if self.operating_system == 'nt':
-            os.system('cls')
-        else:
-            os.system('clear')
 
     def get_user(self) -> User:
         """

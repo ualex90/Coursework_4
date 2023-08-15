@@ -1,7 +1,7 @@
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
 
-from src.ui.text_ui import TextUI
+from src.ui.main import TextUI
 from src.utils.file_manager import JSONManager
 from src.utils.file_manager import YAMLManager
 from src.vacancies.vacancies import Vacancies
