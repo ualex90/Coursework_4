@@ -1,11 +1,6 @@
-import time
-from pathlib import Path
-
-from settings import USER
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
 from src.ui.ui_utils import UIUtils
-from src.user.user import User
 from src.utils.file_manager import JSONManager, YAMLManager
 from src.vacancies.vacancies import Vacancies
 
@@ -13,7 +8,7 @@ from src.vacancies.vacancies import Vacancies
 class TextUI(UIUtils):
     """Пользовательский интерфейс"""
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
         self.hh = HeadHunterAPI()  # объект для работы с API HeadHunter
         self.sj = SuperJobAPI()  # объект для работы с API HeadHunter
@@ -25,40 +20,13 @@ class TextUI(UIUtils):
         self.user = None
         self.sorted = dict()
 
-    def main(self):
+    def main(self) -> None:
         """главный метод UI"""
         self.user = self.get_user()
         self.sorted = self.user.sort
         self.main_menu()
 
-    def get_user(self) -> User:
-        """
-        Инициализируем пользователя из файла, если файл есть и содержит имя пользователя
-        в противном случае - создаем нового пользователя
-        :return:
-        """
-        self.clear_screen()
-        greetings = 'Добро пожаловать в JobParser'
-        for i in greetings:
-            print(i, end='')
-            time.sleep(0.00)
-        if Path(USER).exists():
-            user = User.init_yaml()
-            if user.name:
-                print(f', ', end='')
-                for i in user.name:
-                    print(i, end='')
-                    time.sleep(0.00)
-                print(f'!')
-                print('-' * (len(greetings) + len(user.name) + 3))
-                return user
-        print('!')
-        user = User(name=input('Введите свое имя: '))
-        print('-' * (len(greetings) + 1))
-        self.get_user()
-        return user
-
-    def main_menu(self):
+    def main_menu(self) -> None:
         """Основное меню"""
         print('<Что нужно сделать?>')
         print('1. Настроить параметры поиска\n'
@@ -88,7 +56,7 @@ class TextUI(UIUtils):
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.main_menu()
 
-    def search_settings(self):
+    def search_settings(self) -> None:
         """Выбор сервиса поиска работы"""
         match self.user.service:
             case 1:
@@ -127,7 +95,7 @@ class TextUI(UIUtils):
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.search_settings()
 
-    def search_in_service(self):
+    def search_in_service(self) -> None:
         """Поиск вакансий в сети"""
         print('<Поиск работы на сервисах>')
         print('Для выхода в главное меню, введите "exit"\n'
@@ -152,7 +120,7 @@ class TextUI(UIUtils):
             self.clear_screen()
             self.menu_service_vacancies()
 
-    def menu_service_vacancies(self):
+    def menu_service_vacancies(self) -> None:
         print('<Выберете подходящий вариант>')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
@@ -183,7 +151,7 @@ class TextUI(UIUtils):
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.menu_service_vacancies()
 
-    def search_in_base(self):
+    def search_in_base(self) -> None:
         """Поиск вакансий в сети"""
         self.vacancies.add_vacancies(self.json_manager.load())
         print('<Поиск работы локальной базе данных>')
@@ -202,7 +170,7 @@ class TextUI(UIUtils):
             self.clear_screen()
             self.menu_base_vacancies()
 
-    def menu_base_vacancies(self):
+    def menu_base_vacancies(self) -> None:
         print('<Выберете подходящий вариант>')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
@@ -228,7 +196,7 @@ class TextUI(UIUtils):
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.menu_base_vacancies()
 
-    def menu_sorted_result(self, source: str):
+    def menu_sorted_result(self, source: str) -> None:
 
         match self.user.sort.get('attribute'):
             case 'service':
@@ -325,7 +293,7 @@ class TextUI(UIUtils):
                 print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
                 self.menu_base_vacancies()
 
-    def view_result(self, source: str):
+    def view_result(self, source: str) -> None:
         try:
             print(self.vacancies)
         except TypeError:
