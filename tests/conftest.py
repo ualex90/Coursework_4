@@ -47,7 +47,6 @@ def vacancy_2():
                    0,
                    0,
                    'https://api.superjob.ru/',
-                   True
                    )
 
 
