@@ -1,3 +1,5 @@
+import math
+
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
 from src.ui.ui_utils import UIUtils
@@ -19,6 +21,7 @@ class TextUI(UIUtils):
         self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
         self.user = None
         self.sorted = dict()
+        self.view_page = 0
 
     def main(self) -> None:
         """главный метод UI"""
@@ -294,18 +297,65 @@ class TextUI(UIUtils):
                 self.menu_base_vacancies()
 
     def view_result(self, source: str) -> None:
-        try:
-            print(self.vacancies)
-        except TypeError:
-            pass
-        input()
-        self.clear_screen()
-        if source == 'service':
-            self.menu_service_vacancies()
-        elif source == 'base':
-            self.menu_base_vacancies()
+        """
+        Отображение результата поиска
+
+        :param source: Источник - service/service
+        """
+        results = len(self.vacancies.list)
+        pages = math.ceil(results / 10)
+        range_list = 10 if self.view_page + 1 < pages else results % 10
+        item_start = self.view_page * 10
+        count = 0
+        print("|№|               НАЗВАНИЕ                   |       РЕГИОН       |   ЗАРПЛАТА   |   ОТМЕТКИ  |\n"
+              "|=============================================================================================|")
+        for i in range(range_list):
+            item = self.vacancies.list[item_start]
+            title = f"{item.title[:35]}..." if len(item.title) > 30 else item.title
+            area = f"{item.area[:15]}..." if len(item.area) > 15 else item.area
+            label = 'К УДАЛЕНИЮ' if item.is_to_removed else ""
+            print(f"|{count}| {title:<40} | {area:<18} | {item.salary_to:<8} {item.currency:<3} | {label:<10} |")
+            count += 1
+            item_start += 1
+
+        print(f'\nСтраница {self.view_page + 1} из {pages}')
+        print('Для открытия вакансии введите ее номер. (q): в меню, (z): назад, (ENTER): вперед')
+
+        user_input = input('>> ')
+        if user_input.isdigit() and len(user_input) == 1:
+            self.clear_screen()
+            item = self.vacancies.list[self.view_page * 10 + int(user_input)]
+            print(item)
+            print('==========================\n'
+                  'Нажмите ENTER для возврата\n'
+                  '(d): отметь/снять отметку для удаления')
+            if input('>> ') == 'd':
+                if item.is_to_removed:
+                    item.is_to_removed = False
+                else:
+                    item.is_to_removed = True
+            self.clear_screen()
+            self.view_result(source)
+        elif user_input == 'q':
+            self.clear_screen()
+            self.view_page = 0
+            self.menu_service_vacancies() if source == 'service' else self.menu_base_vacancies()
+        elif user_input == 'b':
+            self.clear_screen()
+            self.view_page -= 1 if self.view_page > 0 else self.view_page
+            self.view_result(source)
+        elif user_input == '':
+            if pages > self.view_page + 1:
+                self.clear_screen()
+                self.view_page += 1
+                self.view_result(source)
+            else:
+                self.clear_screen()
+                self.view_result(source)
         else:
-            self.main_menu()
+            self.clear_screen()
+            print('Попробуйте еще раз. Необходимо ввести либо номер вакансии, либо букву навигации\n')
+            self.view_result(source)
 
 
 if __name__ == '__main__':
