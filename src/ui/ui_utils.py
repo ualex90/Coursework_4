@@ -76,15 +76,19 @@ class UIUtils:
               )
         match input('>> ').strip():
             case '1':
+                self.conf.is_hh_source = False if self.conf.is_hh_source else True
                 self.clear_screen()
                 self.settings()
             case '2':
+                self.conf.is_sj_source = False if self.conf.is_sj_source else True
                 self.clear_screen()
                 self.settings()
             case '3':
+                self.conf.is_vacancies_log = False if self.conf.is_vacancies_log else True
                 self.clear_screen()
                 self.settings()
             case '4':
+                self.conf.is_save_log = False if self.conf.is_save_log else True
                 self.clear_screen()
                 self.settings()
             case '5':
