@@ -52,7 +52,8 @@ class UIUtils:
         return user
 
     def settings(self) -> None:
-        """Выбор сервиса поиска работы"""
+        """Настройка приложения"""
+
         label = [' ' for i in range(9)]
         label[1] = f' > |' if self.conf.is_hh_source else '   |'
         label[2] = f' > |' if self.conf.is_sj_source else '   |'
@@ -63,7 +64,7 @@ class UIUtils:
         label[7] = f'!!!|'
         label[8] = f'!!!|'
 
-        print('<Выбор сервиса поска работы>')
+        print('      <Настройка приложения>')
         print(f'{label[1]} 1. Сохранять исходные данные HeadHunter\n'
               f'{label[2]} 2. Сохранять исходные данные SuperJob\n'
               f'{label[3]} 3. Отображать лог добавления вакансий в список\n'
@@ -112,6 +113,8 @@ class UIUtils:
                 self.settings()
 
     def view_vacancy(self, item: Vacancy) -> None:
+        """Отображение вакансии"""
+
         self.clear_screen()
         print(item)
         print('==========================\n'
