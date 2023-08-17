@@ -2,16 +2,16 @@ import os
 import time
 from pathlib import Path
 
-from settings import USER
-from src.user.user import User
-from src.utils.file_manager import JSONManager
+from settings import USER_FILE
+from src.config.config_tool import ConfigTool
+from src.config.user import User
 from src.vacancies.vacancy import Vacancy
 
 
 class UIUtils:
     def __init__(self) -> None:
-        self.operating_system = os.name
-        self.is_changed = False
+        self.operating_system = os.name  # Тип операционной системы
+        self.is_changed = False  # Флаг изменения меток
 
     def clear_screen(self) -> None:
         """
@@ -34,7 +34,7 @@ class UIUtils:
         for i in greetings:
             print(i, end='')
             time.sleep(0.00)
-        if Path(USER).exists():
+        if Path(USER_FILE).exists():
             user = User.init_yaml()
             if user.name:
                 print(f', ', end='')
@@ -50,13 +50,51 @@ class UIUtils:
         self.get_user()
         return user
 
+    def settings(self) -> None:
+        """Выбор сервиса поиска работы"""
+        label = [' ' for i in range(5)]
+
+        # match self.config.service:
+        #     case 1:
+        #         label = [None, '>', ' ', ' ']
+        #     case 2:
+        #         label = [None, ' ', '>', ' ']
+        #     case 3:
+        #         label = [None, ' ', ' ', '>']
+        #     case _:
+        #         label = [None, ' ', ' ', ' ']
+
+        print('<Выбор сервиса поска работы>')
+        print(f'{label[1]} 1. Сохранять полученные данные с сервисов\n'
+              f'{label[2]} 2. HeadHunter\n'
+              f'{label[3]} 3. SuperJob\n'
+              f'  4. Назад, в главное меню'
+              )
+        match input('>> ').strip():
+            case '1':
+                self.clear_screen()
+                self.settings()
+            case '2':
+                self.clear_screen()
+                self.settings()
+            case '3':
+                self.clear_screen()
+                self.settings()
+            case '4':
+                self.clear_screen()
+                return None
+            case _:
+                self.clear_screen()
+                print('Попробуйте еще раз. Необходимо ввести номер варианта ответа')
+                self.settings()
+
     def view_vacancy(self, item: Vacancy) -> None:
         self.clear_screen()
         print(item)
         print('==========================\n'
               'Нажмите ENTER для возврата\n'
-              '(d): отметь/снять отметку - к удалению\n'
-              '(f): отметь/снять отметку - избранное'
+              '(d): отметь/снять метку - к удалению\n'
+              '(f): отметь/снять метку - избранное'
               )
         match input('>> '):
             case 'd':

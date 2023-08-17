@@ -2,6 +2,7 @@ import math
 
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
+from src.config.config_tool import ConfigTool
 from src.ui.ui_utils import UIUtils
 from src.utils.file_manager import JSONManager, YAMLManager
 from src.vacancies.vacancies import Vacancies
@@ -18,9 +19,10 @@ class TextUI(UIUtils):
         self.json_manager = JSONManager('vacancies.json')  # объект для сохранения и чтения данных JSON
         self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
         self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
-        self.user = None
-        self.sorted = dict()
-        self.view_page = 0
+        self.conf = ConfigTool.init_yaml()
+        self.user = None  # Объект "Пользователь"
+        self.sorted = dict()  # Параметр сортировки
+        self.view_page = 0  # Просматриваемая страница
 
     def main(self) -> None:
         """главный метод UI"""
@@ -111,14 +113,18 @@ class TextUI(UIUtils):
             match self.user.service:
                 case 1:
                     self.clear_screen()
-                    self.vacancies.add_vacancies(self.hh.get_vacancies(request, page_limit=None), log=True)
-                    self.vacancies.add_vacancies(self.sj.get_vacancies(request, page_limit=None), log=True)
+                    data = self.hh.get_vacancies(request, page_limit=self.conf.hh_limit, source=self.conf.is_hh_source)
+                    self.vacancies.add_vacancies(data, log=self.conf.is_vacancies_log)
+                    data = self.sj.get_vacancies(request, page_limit=self.conf.sj_limit, source=self.conf.is_sj_source)
+                    self.vacancies.add_vacancies(data, log=self.conf.is_vacancies_log)
                 case 2:
                     self.clear_screen()
-                    self.vacancies.add_vacancies(self.hh.get_vacancies(request, page_limit=None), log=True)
+                    data = self.hh.get_vacancies(request, page_limit=self.conf.hh_limit, source=self.conf.is_hh_source)
+                    self.vacancies.add_vacancies(data, log=self.conf.is_vacancies_log)
                 case 3:
                     self.clear_screen()
-                    self.vacancies.add_vacancies(self.sj.get_vacancies(request, page_limit=None), log=True)
+                    data = self.sj.get_vacancies(request, page_limit=self.conf.sj_limit, source=self.conf.is_sj_source)
+                    self.vacancies.add_vacancies(data, log=self.conf.is_vacancies_log)
             input('Для продолжения работы, нажмите ENTER')
             self.clear_screen()
             self.menu_service_vacancies()
@@ -144,7 +150,7 @@ class TextUI(UIUtils):
                 self.menu_sorted_result('service')
             case '4':
                 self.clear_screen()
-                self.json_manager.save_vacancies(self.vacancies, log=True)
+                self.json_manager.save_vacancies(self.vacancies, log=self.conf.is_save_log)
                 self.menu_service_vacancies()
             case '5':
                 self.clear_screen()
@@ -355,7 +361,7 @@ class TextUI(UIUtils):
             print('Сохранить в базу данных? (y/n)')
             match input('>> ').strip().lower():
                 case 'y':
-                    self.json_manager.save_vacancies(self.vacancies, log=True)
+                    self.json_manager.save_vacancies(self.vacancies, log=self.conf.is_save_log)
                     self.is_changed = False
                     self.clear_screen()
                 case 'n':

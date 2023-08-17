@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # result = vacancies.search('junior')
     # [print(i) for i in result]
 
-    # user = yaml_manager.load()
+    # config = yaml_manager.load()
 
     ui = TextUI()
     ui.main()
