@@ -54,14 +54,14 @@ class UIUtils:
     def settings(self) -> None:
         """Выбор сервиса поиска работы"""
         label = [' ' for i in range(9)]
-        label[1] = f'   >' if self.conf.is_hh_source else '    '
-        label[2] = f'   >' if self.conf.is_sj_source else '    '
-        label[3] = f'   >' if self.conf.is_vacancies_log else '    '
-        label[4] = f'   >' if self.conf.is_save_log else '    '
-        label[5] = f'({self.conf.hh_limit:<2})' if self.conf.hh_limit else '(40)'
-        label[6] = f' ({self.conf.sj_limit:<1})' if self.conf.sj_limit else ' (6)'
-        label[7] = f'   !'
-        label[8] = f'   !'
+        label[1] = f' > |' if self.conf.is_hh_source else '   |'
+        label[2] = f' > |' if self.conf.is_sj_source else '   |'
+        label[3] = f' > |' if self.conf.is_vacancies_log else '   |'
+        label[4] = f' > |' if self.conf.is_save_log else '   |'
+        label[5] = f'{self.conf.hh_limit:<2} |' if self.conf.hh_limit else '40 |'
+        label[6] = f' {self.conf.sj_limit:<1} |' if self.conf.sj_limit else ' 6 |'
+        label[7] = f'!!!|'
+        label[8] = f'!!!|'
 
         print('<Выбор сервиса поска работы>')
         print(f'{label[1]} 1. Сохранять исходные данные HeadHunter\n'

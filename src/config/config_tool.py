@@ -1,6 +1,6 @@
 from settings import CONFIG_FILE
 from src.config.config import Config
-from src.utils.file_manager import FileManager, YAMLManager
+from src.utils.file_manager import YAMLManager
 
 
 class ConfigTool(Config):
