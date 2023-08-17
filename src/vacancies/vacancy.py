@@ -3,8 +3,8 @@ class Vacancy:
     __slots__ = ('vacancy_id', 'service', 'title', 'date', 'area', 'currency',
                  'salary_fom', 'salary_to', 'url', '__is_to_removed', '__is_favorite')
 
-    def __init__(self, vacancy_id: str, service: str, title: str, date: str, area: str,
-                 currency: str, salary_fom: int, salary_to: int, url: str) -> None:
+    def __init__(self, vacancy_id: str, service: str, title: str, date: str, area: str, currency: str,
+                 salary_fom: int, salary_to: int, url: str, is_favorite: bool = False) -> None:
         """
         Инициализация
         """
@@ -18,7 +18,7 @@ class Vacancy:
         self.salary_to = salary_to
         self.url = url
         self.__is_to_removed = False
-        self.__is_favorite = False
+        self.__is_favorite = is_favorite
 
     @property
     def is_favorite(self) -> bool:

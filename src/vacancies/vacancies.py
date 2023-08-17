@@ -24,7 +24,8 @@ class Vacancies:
                                      value.get('currency'),
                                      value.get('salary_fom'),
                                      value.get('salary_to'),
-                                     value.get('url')
+                                     value.get('url'),
+                                     value.get('is_favorite')
                                      ))
             count += 1
         if log:

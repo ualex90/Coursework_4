@@ -30,6 +30,7 @@ class TextUI(UIUtils):
 
     def main_menu(self) -> None:
         """Основное меню"""
+        self.vacancies.list = []
         print('<Что нужно сделать?>')
         print('1. Настроить параметры поиска\n'
               '2. Найти вакансии в сети, на выбранных площадках\n'
@@ -306,14 +307,16 @@ class TextUI(UIUtils):
         range_list = 10 if self.view_page + 1 < pages else results % 10
         item_start = self.view_page * 10
         count = 0
-        print("|№|               НАЗВАНИЕ                   |       РЕГИОН       |    ЗАРПЛАТА   |   ОТМЕТКИ  |\n"
-              "|==============================================================================================|")
+        print("|№|               НАЗВАНИЕ                   |       РЕГИОН       |    ЗАРПЛАТА    |   ОТМЕТКИ  |\n"
+              "|===============================================================================================|")
         for i in range(range_list):
             item = self.vacancies.list[item_start]
             title = f"{item.title[:35]}..." if len(item.title) > 30 else item.title
             area = f"{item.area[:15]}..." if len(item.area) > 15 else item.area
+            salary = item.salary_to if item.salary_to else "не указана"
+            currency = item.currency if item.salary_to else ""
             label = 'К УДАЛЕНИЮ' if item.is_to_removed else 'ИЗБРАННОЕ' if item.is_favorite else ""
-            print(f"|{count}| {title:<40} | {area:<18} | {item.salary_to:<8} {item.currency:<4} | {label:<10} |")
+            print(f"|{count}| {title:<40} | {area:<18} | {salary:<10} {currency:<3} | {label:<10} |")
             count += 1
             item_start += 1
 
@@ -353,6 +356,7 @@ class TextUI(UIUtils):
             match input('>> ').strip().lower():
                 case 'y':
                     self.json_manager.save_vacancies(self.vacancies, log=True)
+                    self.is_changed = False
                     self.clear_screen()
                 case 'n':
                     self.clear_screen()

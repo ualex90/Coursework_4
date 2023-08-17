@@ -1,3 +1,4 @@
+import time
 from abc import ABC, abstractmethod
 import json
 from json import JSONDecodeError
@@ -92,6 +93,9 @@ class JSONManager(FileManager):
             data = self.load()
             n_old = len(data)
             data.update(new_data)
+            for i in vacancies.list:
+                if i.is_to_removed and data.get(i.vacancy_id):
+                    del data[i.vacancy_id]
             mode = 'w'
         else:
             n_old = 0
@@ -105,6 +109,7 @@ class JSONManager(FileManager):
         if log:
             msg = f'Добавлено вакансий: {n_new - n_old}. Всего в базе: {n_new}'
             print(msg, '\n', '-' * len(msg))
+            time.sleep(3)
 
 
 class YAMLManager(FileManager):

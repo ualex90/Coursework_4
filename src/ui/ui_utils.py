@@ -60,11 +60,13 @@ class UIUtils:
               )
         match input('>> '):
             case 'd':
+                self.is_changed = True
                 if item.is_to_removed:
                     item.is_to_removed = False
                 else:
                     item.is_to_removed = True
             case 'f':
+                self.is_changed = True
                 if item.is_favorite:
                     item.is_favorite = False
                 else:
