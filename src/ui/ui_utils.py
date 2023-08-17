@@ -11,6 +11,7 @@ from src.vacancies.vacancy import Vacancy
 class UIUtils:
     def __init__(self) -> None:
         self.operating_system = os.name  # Тип операционной системы
+        self.conf = ConfigTool.init_yaml()  # Настройки программы
         self.is_changed = False  # Флаг изменения меток
 
     def clear_screen(self) -> None:
@@ -52,23 +53,26 @@ class UIUtils:
 
     def settings(self) -> None:
         """Выбор сервиса поиска работы"""
-        label = [' ' for i in range(5)]
-
-        # match self.config.service:
-        #     case 1:
-        #         label = [None, '>', ' ', ' ']
-        #     case 2:
-        #         label = [None, ' ', '>', ' ']
-        #     case 3:
-        #         label = [None, ' ', ' ', '>']
-        #     case _:
-        #         label = [None, ' ', ' ', ' ']
+        label = [' ' for i in range(9)]
+        label[1] = f'   >' if self.conf.is_hh_source else '    '
+        label[2] = f'   >' if self.conf.is_sj_source else '    '
+        label[3] = f'   >' if self.conf.is_vacancies_log else '    '
+        label[4] = f'   >' if self.conf.is_save_log else '    '
+        label[5] = f'({self.conf.hh_limit:<2})' if self.conf.hh_limit else '(40)'
+        label[6] = f' ({self.conf.sj_limit:<1})' if self.conf.sj_limit else ' (6)'
+        label[7] = f'   !'
+        label[8] = f'   !'
 
         print('<Выбор сервиса поска работы>')
-        print(f'{label[1]} 1. Сохранять полученные данные с сервисов\n'
-              f'{label[2]} 2. HeadHunter\n'
-              f'{label[3]} 3. SuperJob\n'
-              f'  4. Назад, в главное меню'
+        print(f'{label[1]} 1. Сохранять исходные данные HeadHunter\n'
+              f'{label[2]} 2. Сохранять исходные данные SuperJob\n'
+              f'{label[3]} 3. Отображать лог добавления вакансий в список\n'
+              f'{label[4]} 4. Отображать лог сохранения в файл\n'
+              f'{label[5]} 5. Лимит запроса страниц HeadHunter (не более 40)\n'
+              f'{label[6]} 6. Лимит запроса страниц SuperJob (не более 6)\n'
+              f'{label[7]} 7. Очистить локальную базу данных\n'
+              f'{label[8]} 8. Удалить пользователя\n'
+              f'     9. Назад, в главное меню'
               )
         match input('>> ').strip():
             case '1':
@@ -81,6 +85,21 @@ class UIUtils:
                 self.clear_screen()
                 self.settings()
             case '4':
+                self.clear_screen()
+                self.settings()
+            case '5':
+                self.clear_screen()
+                self.settings()
+            case '6':
+                self.clear_screen()
+                self.settings()
+            case '7':
+                self.clear_screen()
+                self.settings()
+            case '8':
+                self.clear_screen()
+                self.settings()
+            case '9':
                 self.clear_screen()
                 return None
             case _:

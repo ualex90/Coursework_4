@@ -2,7 +2,6 @@ import math
 
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
-from src.config.config_tool import ConfigTool
 from src.ui.ui_utils import UIUtils
 from src.utils.file_manager import JSONManager, YAMLManager
 from src.vacancies.vacancies import Vacancies
@@ -19,7 +18,6 @@ class TextUI(UIUtils):
         self.json_manager = JSONManager('vacancies.json')  # объект для сохранения и чтения данных JSON
         self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
         self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
-        self.conf = ConfigTool.init_yaml()
         self.user = None  # Объект "Пользователь"
         self.sorted = dict()  # Параметр сортировки
         self.view_page = 0  # Просматриваемая страница
@@ -51,7 +49,9 @@ class TextUI(UIUtils):
                 self.clear_screen()
                 self.search_in_base()
             case '4':
-                pass
+                self.clear_screen()
+                self.settings()
+                self.main_menu()
             case '5':
                 self.clear_screen()
                 print('Возвращайтесь! Работа сама себя не найдет))')

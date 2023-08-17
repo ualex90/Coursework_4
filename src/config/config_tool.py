@@ -14,8 +14,8 @@ class ConfigTool(Config):
         self._is_sj_source = kwargs.get('_is_sj_source') if kwargs.get('_is_sj_source') else False
         self._is_vacancies_log = kwargs.get('_is_vacancies_log') if kwargs.get('_is_vacancies_log') else True
         self._is_save_log = kwargs.get('_is_save_log') if kwargs.get('_is_save_log') else True
-        self._hh_page_limit = kwargs.get('_hh_page_limit')
-        self._sj_page_limit = kwargs.get('_sj_page_limit')
+        self._hh_limit = kwargs.get('_hh_limit')
+        self._sj_limit = kwargs.get('_sj_limit')
 
     @property
     def is_hh_source(self):
@@ -59,20 +59,28 @@ class ConfigTool(Config):
 
     @property
     def hh_limit(self):
-        return self._hh_page_limit
+        return self._hh_limit
 
     @hh_limit.setter
     def hh_limit(self, data: int):
         if isinstance(data, int):
-            self._hh_page_limit = data
-            self.save_config()
+            if 0 < data < 40:
+                self._hh_limit = data
+                self.save_config()
+            elif data > 40:
+                self._hh_limit = 40
+                self.save_config()
 
     @property
     def sj_limit(self):
-        return self._sj_page_limit
+        return self._sj_limit
 
     @sj_limit.setter
     def sj_limit(self, data: int):
         if isinstance(data, int):
-            self._sj_page_limit = data
-            self.save_config()
+            if 0 < data < 6:
+                self._hh_limit = data
+                self.save_config()
+            elif data > 6:
+                self._hh_limit = 6
+                self.save_config()
