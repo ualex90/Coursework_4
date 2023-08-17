@@ -4,11 +4,14 @@ from pathlib import Path
 
 from settings import USER
 from src.user.user import User
+from src.utils.file_manager import JSONManager
+from src.vacancies.vacancy import Vacancy
 
 
 class UIUtils:
     def __init__(self) -> None:
         self.operating_system = os.name
+        self.is_changed = False
 
     def clear_screen(self) -> None:
         """
@@ -46,3 +49,24 @@ class UIUtils:
         print('-' * (len(greetings) + 1))
         self.get_user()
         return user
+
+    def view_vacancy(self, item: Vacancy) -> None:
+        self.clear_screen()
+        print(item)
+        print('==========================\n'
+              'Нажмите ENTER для возврата\n'
+              '(d): отметь/снять отметку - к удалению\n'
+              '(f): отметь/снять отметку - избранное'
+              )
+        match input('>> '):
+            case 'd':
+                if item.is_to_removed:
+                    item.is_to_removed = False
+                else:
+                    item.is_to_removed = True
+            case 'f':
+                if item.is_favorite:
+                    item.is_favorite = False
+                else:
+                    item.is_favorite = True
+        self.clear_screen()

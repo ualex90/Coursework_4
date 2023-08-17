@@ -34,20 +34,25 @@ class JSONManager(FileManager):
 
     @staticmethod
     def make_dict(vacancies: Vacancies) -> dict:
-        """Формирование словаря из объекта Vacancy"""
+        """
+        Формирование словаря из объекта Vacancy.
+        Собирает словарь из списка объектов вакансий.
+        Добавляются в словарь только вакансии НЕ отмеченные к удалению
+        """
 
         data = dict()
         for item in vacancies.list:
-            data[item.vacancy_id] = {'service': item.service,
-                                     'title': item.title,
-                                     'date': item.date,
-                                     'area': item.area,
-                                     'currency': item.currency,
-                                     'salary_fom': item.salary_fom,
-                                     'salary_to': item.salary_to,
-                                     'url': item.url,
-                                     'is_favorite': item.is_favorite
-                                     }
+            if not item.is_to_removed:
+                data[item.vacancy_id] = {'service': item.service,
+                                         'title': item.title,
+                                         'date': item.date,
+                                         'area': item.area,
+                                         'currency': item.currency,
+                                         'salary_fom': item.salary_fom,
+                                         'salary_to': item.salary_to,
+                                         'url': item.url,
+                                         'is_favorite': item.is_favorite
+                                         }
         return data
 
     def load(self) -> dict:
