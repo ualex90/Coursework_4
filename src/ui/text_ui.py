@@ -30,12 +30,12 @@ class TextUI(UIUtils):
     def main_menu(self) -> None:
         """Основное меню"""
         self.vacancies.list = []
-        print('<Что нужно сделать?>')
+        print('<Что нужно сделать?>\n')
         print('1. Настроить параметры поиска\n'
               '2. Найти вакансии в сети, на выбранных площадках\n'
               '3. Найти вакансии в локальной базе данных\n'
               '4. Настроить приложение\n'
-              '5. Выход из программы'
+              '5. Выход из программы\n'
               )
         match input('>> ').strip():
             case '1':
@@ -72,11 +72,11 @@ class TextUI(UIUtils):
             case _:
                 label = [None, ' ', ' ', ' ']
 
-        print('<Выбор сервиса поска работы>')
+        print('<Выбор сервиса поиска работы>\n')
         print(f'{label[1]} 1. SuperJob + HeadHunter\n'
               f'{label[2]} 2. HeadHunter\n'
               f'{label[3]} 3. SuperJob\n'
-              f'  4. Назад, в главное меню'
+              f'  4. Назад, в главное меню\n'
               )
         match input('>> ').strip():
             case '1':
@@ -101,9 +101,9 @@ class TextUI(UIUtils):
 
     def search_in_service(self) -> None:
         """Поиск вакансий в сети"""
-        print('<Поиск работы на сервисах>')
+        print('<Поиск работы на сервисах>\n')
         print('Для выхода в главное меню, введите "exit"\n'
-              'Введите название вакансии:'
+              'Введите название вакансии:\n'
               )
         if (request := input('>> ').lower().strip()) == 'exit':
             self.clear_screen()
@@ -129,12 +129,12 @@ class TextUI(UIUtils):
             self.menu_service_vacancies()
 
     def menu_service_vacancies(self) -> None:
-        print('<Выберете подходящий вариант>')
+        print('<Выберете подходящий вариант>\n')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
               '3. Сортировка\n'
               '4. Сохранить вакансии в локальную базу данных\n'
-              '5. Главное меню'
+              '5. Главное меню\n'
               )
         match input('>> ').strip():
             case '1':
@@ -160,12 +160,13 @@ class TextUI(UIUtils):
                 self.menu_service_vacancies()
 
     def search_in_base(self) -> None:
-        """Поиск вакансий в сети"""
+        """Поиск вакансий в локальной базе данных"""
+
         self.vacancies.add_vacancies(self.json_manager.load())
-        print('<Поиск работы локальной базе данных>')
+        print('<Поиск работы локальной базе данных>\n')
         print(f'Всего вакансий в базе {len(self.vacancies)}')
         print('Для выхода в главное меню, введите "exit"\n'
-              'Введите название вакансии:'
+              'Введите название вакансии:\n'
               )
         if (request := input('>> ').lower().strip()) == 'exit':
             self.clear_screen()
@@ -179,11 +180,11 @@ class TextUI(UIUtils):
             self.menu_base_vacancies()
 
     def menu_base_vacancies(self) -> None:
-        print('<Выберете подходящий вариант>')
+        print('<Выберете подходящий вариант>\n')
         print('1. Просмотр вакансий\n'
               '2. Новый поиск\n'
               '3. Сортировка\n'
-              '4. Главное меню'
+              '4. Главное меню\n'
               )
         match input('>> ').strip():
             case '1':
@@ -229,17 +230,17 @@ class TextUI(UIUtils):
         else:
             label_r = ['>', ' ']
 
-        print('<Сортировка>')
+        print('<Сортировка>\n')
         print(f'{label[1]} 1. По сервису\n'
               f'{label[2]} 2. По названию\n'
               f'{label[3]} 3. По дате публикации\n'
               f'{label[4]} 4. По региону\n'
               f'{label[5]} 5. По валюте\n'
               f'{label[6]} 6. По зарплате\n'
-              f'{label[7]} 7. Сначала избранные вакансии\n'
-              f'{label_r[0]} 8. Отображать с начала\n'
-              f'{label_r[1]} 9. Отображать с конца\n'
-              '  10. Назад'
+              f'{label[7]} 7. По избранному\n'
+              f'{label_r[0]} 8. От меньшего к большему\n'
+              f'{label_r[1]} 9. От большего к меньшему\n'
+              '  10. Назад\n'
               )
         match input('>> '):
             case '1':
@@ -307,6 +308,7 @@ class TextUI(UIUtils):
 
         :param source: Источник - service/service
         """
+        self.vacancies.sorted(**self.user.sort)
         results = len(self.vacancies.list)
         pages = math.ceil(results / 10)
         range_list = 10 if self.view_page + 1 < pages else results % 10
@@ -362,6 +364,10 @@ class TextUI(UIUtils):
                 case 'y':
                     self.json_manager.save_vacancies(self.vacancies, log=self.conf.is_save_log)
                     self.is_changed = False
+                    if source == 'base':
+                        self.vacancies.list = []
+                        self.vacancies.add_vacancies(self.json_manager.load())
+                        self.vacancies.sorted(self.user.sort)
                     self.clear_screen()
                 case 'n':
                     self.clear_screen()

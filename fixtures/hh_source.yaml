@@ -1,0 +1,3475 @@
+- id: '84511864'
+  premium: false
+  name: Диспетчер чатов, удаленно
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:06:33+0300
+  created_at: 2023-08-03T18:06:33+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84511864
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84511864?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84511864
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Опыт работы не требуется. Обязательно наличие ПК или ноутбука. Будет
+      плюсом опыт работы на вакансиях:'
+    responsibility: null
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '77704151'
+  premium: false
+  name: Театральный представитель (удаленно)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 65000
+    to: 125000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-30T14:31:56+0300
+  created_at: 2023-07-30T14:31:56+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=77704151
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/77704151?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/77704151
+  relations: []
+  employer:
+    id: '2515303'
+    name: AFISHA AGENCY
+    url: https://api.hh.ru/employers/2515303
+    alternate_url: https://hh.ru/employer/2515303
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/897506.jpg
+      '90': https://hhcdn.ru/employer-logo/4030711.jpeg
+      '240': https://hhcdn.ru/employer-logo/4030712.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2515303
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: грамотная речь. ◾️ Уверенное владение ПК. ◾️ Умение работать в команде.
+      ◾️ Мотивация на высокий заработок. ◾️ Готовность обучаться и зарабатывать деньги.
+    responsibility: 'Продажа театральных билетов по ip-телефонии. ◾️ Заключение сделок
+      и контроль доставки билетов клиенту. ◾️ Актуализация и обновление клиентской
+      базы. ◾️ '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: true
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85149119'
+  premium: false
+  name: Мемолог
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '35'
+    name: Иркутск
+    url: https://api.hh.ru/areas/35
+  salary:
+    from: 50000
+    to: null
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Иркутск
+    street: улица Лермонтова
+    building: '339'
+    lat: 52.237595
+    lng: 104.280472
+    description: null
+    raw: Иркутск, улица Лермонтова, 339
+    metro: null
+    metro_stations: []
+    id: '11998488'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-16T04:19:34+0300
+  created_at: 2023-08-16T04:19:34+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85149119
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85149119?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85149119
+  relations: []
+  employer:
+    id: '6063299'
+    name: БВК
+    url: https://api.hh.ru/employers/6063299
+    alternate_url: https://hh.ru/employer/6063299
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1069643.jpg
+      '240': https://hhcdn.ru/employer-logo/5899202.jpeg
+      '90': https://hhcdn.ru/employer-logo/5899201.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=6063299
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Быть в курсе актуальных мемов.
+    responsibility: null
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '8'
+    name: Администратор
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84512551'
+  premium: false
+  name: Менеджер чатов на дому (в Яндекс)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:13:03+0300
+  created_at: 2023-08-03T18:13:03+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84512551
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84512551?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84512551
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Способен работать в команде. Способен принимать решения самостоятельно.
+      Готов учиться и узнавать новое. Опыт работы в колл-центре или службе...
+    responsibility: 'Работать с клиентами или партнерами для решения разнообразных
+      ситуаций. Совершать звонки по их обращениям и давать письменные ответы. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84512799'
+  premium: false
+  name: Менеджер чатов, удалённо (в Яндекс)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:22:29+0300
+  created_at: 2023-08-03T18:22:29+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84512799
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84512799?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84512799
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Способен работать в команде. Способен принимать решения самостоятельно.
+      Готов учиться и узнавать новое. Опыт работы в колл-центре или службе...
+    responsibility: 'Работать с клиентами или партнерами для решения разнообразных
+      ситуаций. Совершать звонки по их обращениям и давать письменные ответы. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84513210'
+  premium: false
+  name: Удаленный специалист службы поддержки (в Яндекс)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:38:36+0300
+  created_at: 2023-08-03T18:38:36+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84513210
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84513210?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84513210
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Способен работать в команде. Способен принимать решения самостоятельно.
+      Готов учиться и узнавать новое. Опыт работы в колл-центре или службе...
+    responsibility: 'Работать с клиентами или партнерами для решения разнообразных
+      ситуаций. Совершать звонки по их обращениям и давать письменные ответы. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84511411'
+  premium: false
+  name: Оператор на входящие сообщения (удаленно, в Яндекс)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T17:55:52+0300
+  created_at: 2023-08-03T17:55:52+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84511411
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84511411?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84511411
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Способен работать в команде. Способен принимать решения самостоятельно.
+      Готов учиться и узнавать новое. Опыт работы в колл-центре или службе...
+    responsibility: 'Работать с клиентами или партнерами для решения разнообразных
+      ситуаций. Совершать звонки по их обращениям и давать письменные ответы. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84512932'
+  premium: false
+  name: Удаленный диспетчер чатов (в Яндекс)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '113'
+    name: Россия
+    url: https://api.hh.ru/areas/113
+  salary:
+    from: 30000
+    to: 44000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:28:08+0300
+  created_at: 2023-08-03T18:28:08+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84512932
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84512932?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84512932
+  relations: []
+  employer:
+    id: '1740'
+    name: Яндекс
+    url: https://api.hh.ru/employers/1740
+    alternate_url: https://hh.ru/employer/1740
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3790847.png
+      '240': https://hhcdn.ru/employer-logo/3790848.png
+      original: https://hhcdn.ru/employer-logo-original/837491.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1740
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Способен работать в команде. Способен принимать решения самостоятельно.
+      Готов учиться и узнавать новое. Опыт работы в колл-центре или службе...
+    responsibility: 'Работать с клиентами или партнерами для решения разнообразных
+      ситуаций. Совершать звонки по их обращениям и давать письменные ответы. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85274679'
+  premium: false
+  name: Оператор контактного центра (удалённо)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '3'
+    name: Екатеринбург
+    url: https://api.hh.ru/areas/3
+  salary:
+    from: null
+    to: 50000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T21:08:48+0300
+  created_at: 2023-08-17T21:08:48+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85274679
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85274679?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85274679
+  relations: []
+  employer:
+    id: '3036416'
+    name: Департамент Ф53
+    url: https://api.hh.ru/employers/3036416
+    alternate_url: https://hh.ru/employer/3036416
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/967220.png
+      '240': https://hhcdn.ru/employer-logo/5487997.png
+      '90': https://hhcdn.ru/employer-logo/5487996.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3036416
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Грамотная речь.  Базовые знания ПК.  Грамотная речь.  Математическая
+      и письменная грамотность. Клиентоориентированность, бесконфликтность.
+    responsibility: Отвечать клиентам на звонки, письма и в мессенджерах. Оперативно
+      помогать клиентам решать вопросы с заказами.  Отсутствие холодных продаж.
+  contacts: null
+  schedule: null
+  working_days:
+  - id: only_saturday_and_sunday
+    name: Работа только по сб и вс
+  working_time_intervals:
+  - id: from_four_to_six_hours_in_a_day
+    name: Можно работать сменами по 4–6 часов в день
+  working_time_modes:
+  - id: start_after_sixteen
+    name: Можно начинать работать после 16:00
+  accept_temporary: true
+  professional_roles:
+  - id: '58'
+    name: Курьер
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: part
+    name: Частичная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '72988638'
+  premium: false
+  name: Билетный промоутер (удаленно)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '53'
+    name: Краснодар
+    url: https://api.hh.ru/areas/53
+  salary:
+    from: 65000
+    to: 125000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-30T14:31:48+0300
+  created_at: 2023-07-30T14:31:48+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=72988638
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/72988638?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/72988638
+  relations: []
+  employer:
+    id: '2515303'
+    name: AFISHA AGENCY
+    url: https://api.hh.ru/employers/2515303
+    alternate_url: https://hh.ru/employer/2515303
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/897506.jpg
+      '90': https://hhcdn.ru/employer-logo/4030711.jpeg
+      '240': https://hhcdn.ru/employer-logo/4030712.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2515303
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Четкая дикция и грамотная речь. ◾️ Уверенное владение ПК. ◾️ Умение
+      работать в команде. ◾️ Мотивация на высокий заработок. ◾️ Готовность обучаться
+      и зарабатывать...
+    responsibility: 'Продажа театральных билетов по ip-телефонии. ◾️ Заключение сделок
+      и контроль доставки билетов клиенту. ◾️ Актуализация и обновление клиентской
+      базы. ◾️ '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: true
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84512858'
+  premium: false
+  name: Менеджер по продажам частных домов под ключ
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '160'
+    name: Алматы
+    url: https://api.hh.ru/areas/160
+  salary:
+    from: 200000
+    to: 1000000
+    currency: KZT
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T18:24:27+0300
+  created_at: 2023-08-03T18:24:27+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84512858
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84512858?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84512858
+  relations: []
+  employer:
+    id: '10135851'
+    name: Comfort Builders
+    url: https://api.hh.ru/employers/10135851
+    alternate_url: https://hh.ru/employer/10135851
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1139623.jpg
+      '240': https://hhcdn.ru/employer-logo/6179078.jpeg
+      '90': https://hhcdn.ru/employer-logo/6179077.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=10135851
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Опыт работы в сфере продаж желательно в строительной отрасли. Знание
+      строительных материалов и технологий будет являться преимуществом. Отличные
+      коммуникативные и...
+    responsibility: 'Активное привлечение клиентов и поиск новых возможностей для
+      увеличения продаж. Составление и предоставление клиентам предложений по строительству
+      и ремонту. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83754447'
+  premium: false
+  name: Водитель-экспедитор
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 70000
+    to: 85000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-20T12:33:58+0300
+  created_at: 2023-07-20T12:33:58+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83754447
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83754447?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83754447
+  relations: []
+  employer:
+    id: '1223607'
+    name: Фростэлектро
+    url: https://api.hh.ru/employers/1223607
+    alternate_url: https://hh.ru/employer/1223607
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3668891.png
+      '240': https://hhcdn.ru/employer-logo/3668892.png
+      original: https://hhcdn.ru/employer-logo-original/807001.JPEG
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1223607
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Водительское удостоверение категории "В".  Соблюдение ПДД. ‍️‍️️‍️
+      Активность, желание работать и зарабатывать. Хорошее знание города и области.
+      Приветствуется опыт работы: водитель...'
+    responsibility: 'Техническое обслуживание - за счет компании. Мойка автомобиля
+      – за счет компании. Водитель на автомобиле компании, будет осуществлять: Доставку
+      мягкой и корпусной...'
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '21'
+    name: Водитель
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83960076'
+  premium: false
+  name: Менеджер по продажам
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1500
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: 4-й переулок Кольцова
+    building: '51'
+    lat: 53.953185
+    lng: 27.600297
+    description: null
+    raw: Минск, 4-й переулок Кольцова, 51
+    metro:
+      station_name: Академия наук
+      line_name: Московская
+      station_id: '62.407'
+      line_id: '62'
+      lat: 53.92187
+      lng: 27.599066
+    metro_stations:
+    - station_name: Академия наук
+      line_name: Московская
+      station_id: '62.407'
+      line_id: '62'
+      lat: 53.92187
+      lng: 27.599066
+    - station_name: Московская
+      line_name: Московская
+      station_id: '62.405'
+      line_id: '62'
+      lat: 53.927978
+      lng: 27.627812
+    - station_name: Парк Челюскинцев
+      line_name: Московская
+      station_id: '62.406'
+      line_id: '62'
+      lat: 53.924214
+      lng: 27.613646
+    id: '6097137'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T09:45:11+0300
+  created_at: 2023-08-14T09:45:11+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83960076
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83960076?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83960076
+  relations: []
+  employer:
+    id: '3217459'
+    name: ХОБОТ
+    url: https://api.hh.ru/employers/3217459
+    alternate_url: https://hh.ru/employer/3217459
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3405969.jpeg
+      '240': https://hhcdn.ru/employer-logo/3405970.jpeg
+      original: https://hhcdn.ru/employer-logo-original/741252.jpg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3217459
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Опыт работы в телефонных продажах/активных продаж сложного продукта
+      от 1 года (будет Вашим преимуществом). -Уверенный пользователь ПК. -
+    responsibility: Осуществляем подбор и поставку оборудования, монтаж на рынке РБ
+      более 9 лет. Работаем по всей территории Беларуси, как с физическими...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85204142'
+  premium: false
+  name: Заместитель директора
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 4000
+    to: null
+    currency: BYR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-16T17:53:05+0300
+  created_at: 2023-08-16T17:53:05+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85204142
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85204142?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85204142
+  relations: []
+  employer:
+    id: '10188282'
+    name: Байпэйнтс
+    url: https://api.hh.ru/employers/10188282
+    alternate_url: https://hh.ru/employer/10188282
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=10188282
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Опыт работы руководителем (управление небольшим коллективом). Опыт
+      в продажах В2В (любые технологичные продукты/оборудование, сложные системы,
+      сервис, требующие...
+    responsibility: 'Start-up: запуск компании "с нуля". Подбор и руководство персоналом.
+      Настройка бизнес-процессов. Запуск и развитие продаж на территории РБ. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '161'
+    name: Руководитель филиала
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85232300'
+  premium: false
+  name: Дежурный по выдаче справок Контакт-центра
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1004'
+    name: Могилев
+    url: https://api.hh.ru/areas/1004
+  salary:
+    from: 1250
+    to: 1350
+    currency: BYR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T10:24:11+0300
+  created_at: 2023-08-17T10:24:11+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85232300
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85232300?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85232300
+  relations: []
+  employer:
+    id: '3635826'
+    name: Могилевское отделение Белорусской железной дороги
+    url: https://api.hh.ru/employers/3635826
+    alternate_url: https://hh.ru/employer/3635826
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3635826
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Хорошая дикция. Знание ПК.
+    responsibility: Предоставление справочно-информационных услуг по пассажирским
+      перевозкам. Бронирование мест на поезда.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '83'
+    name: Оператор call-центра, специалист контактного центра
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83776831'
+  premium: false
+  name: Логист
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1500
+    to: 1600
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: улица Машиностроителей
+    building: '29'
+    lat: 53.849487
+    lng: 27.664589
+    description: null
+    raw: Минск, улица Машиностроителей, 29
+    metro:
+      station_name: Могилевская
+      line_name: Автозаводская
+      station_id: '63.429'
+      line_id: '63'
+      lat: 53.861862
+      lng: 27.674381
+    metro_stations:
+    - station_name: Могилевская
+      line_name: Автозаводская
+      station_id: '63.429'
+      line_id: '63'
+      lat: 53.861862
+      lng: 27.674381
+    id: '738619'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-20T17:26:28+0300
+  created_at: 2023-07-20T17:26:28+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83776831
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83776831?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83776831
+  relations: []
+  employer:
+    id: '2637831'
+    name: Саппорт-Тим
+    url: https://api.hh.ru/employers/2637831
+    alternate_url: https://hh.ru/employer/2637831
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/378211.png
+      '90': https://hhcdn.ru/employer-logo/1955102.png
+      '240': https://hhcdn.ru/employer-logo/1955103.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2637831
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Высшее образование. Опытный пользователь ПК; (знание Microsoft Office,
+      1C). Способность работать в многозадачности. Обязателен опыт работы транспортных
+      компаниях. '
+    responsibility: Планирование маршрутов для водителей по Минску, распределение
+      заказов по маршрутам. Полное сопровождение маршрутов, взаимодействие с водителями.
+      Приём входящих звонков, оформление...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83919545'
+  premium: false
+  name: Специалист по работе с клиентами
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1100
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: Интернациональная улица
+    building: 25А
+    lat: 53.904384
+    lng: 27.558489
+    description: null
+    raw: Минск, Интернациональная улица, 25А
+    metro: null
+    metro_stations: []
+    id: '13477515'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T11:21:36+0300
+  created_at: 2023-08-14T11:21:36+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83919545
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83919545?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83919545
+  relations: []
+  employer:
+    id: '4478117'
+    name: ЧУП Сервис Экспресс
+    url: https://api.hh.ru/employers/4478117
+    alternate_url: https://hh.ru/employer/4478117
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/871130.jpg
+      '90': https://hhcdn.ru/employer-logo/3925395.jpeg
+      '240': https://hhcdn.ru/employer-logo/3925396.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=4478117
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Дисциплине. Поможем выстроить грамотную речь и скорость. Научим не
+      бояться звонить. Поможем развиваться в продажах и зарабатывать. С нами вырастет...
+    responsibility: Общаться с клиентами по IP телефонии, вести клиентов в СRM системе.
+      Выполнять планы и нормативы по продажам. Заниматься поиском и...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85193340'
+  premium: false
+  name: Администратор
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1003'
+    name: Гомель
+    url: https://api.hh.ru/areas/1003
+  salary:
+    from: 1000
+    to: 1300
+    currency: BYR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Гомель
+    street: улица Ауэрбаха
+    building: 89к5
+    lat: 52.43153
+    lng: 30.965817
+    description: null
+    raw: Гомель, улица Ауэрбаха, 89к5
+    metro: null
+    metro_stations: []
+    id: '3262108'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-16T15:25:59+0300
+  created_at: 2023-08-16T15:25:59+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85193340
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85193340?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85193340
+  relations: []
+  employer:
+    id: '3416643'
+    name: Филиал РУП Белсудэкспертобеспечение по г.Гомелю и Гомельской области
+    url: https://api.hh.ru/employers/3416643
+    alternate_url: https://hh.ru/employer/3416643
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3416643
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Высшее образование или среднее медицинское образование, стаж работы
+      в сфере административно-хозяйственного обслуживания не менее 2 лет. Стрессоустойчивость. '
+    responsibility: Составление графиков работы, ведение табелей учета рабочего времени.
+      Организация работы отделений филиала (оказание услуг по подготовке тела умершего(ой)
+      к...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '8'
+    name: Администратор
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84943789'
+  premium: false
+  name: Продавец-консультант
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1200
+    to: 1900
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: проспект Независимости
+    building: '58'
+    lat: 53.917846
+    lng: 27.58914
+    description: null
+    raw: Минск, проспект Независимости, 58
+    metro:
+      station_name: Академия наук
+      line_name: Московская
+      station_id: '62.407'
+      line_id: '62'
+      lat: 53.92187
+      lng: 27.599066
+    metro_stations:
+    - station_name: Академия наук
+      line_name: Московская
+      station_id: '62.407'
+      line_id: '62'
+      lat: 53.92187
+      lng: 27.599066
+    - station_name: Площадь Якуба Коласа
+      line_name: Московская
+      station_id: '62.408'
+      line_id: '62'
+      lat: 53.915369
+      lng: 27.583265
+    id: '4507350'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-11T12:50:49+0300
+  created_at: 2023-08-11T12:50:49+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84943789
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84943789?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84943789
+  relations: []
+  employer:
+    id: '4953100'
+    name: Сороквашин А. А.
+    url: https://api.hh.ru/employers/4953100
+    alternate_url: https://hh.ru/employer/4953100
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1125490.png
+      '90': https://hhcdn.ru/employer-logo/6122549.png
+      '240': https://hhcdn.ru/employer-logo/6122550.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=4953100
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Любить людей, общение с ними. Желание и возможность проявляться,
+      не бояться быть активным и инициативным членом команды. Любить людей (да...
+    responsibility: Продажа товара на зале в магазине и консультирование клиентов
+      по геологической и эзотерической составляющей. Работа с кассой. Подготовка и
+      выкладка...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '77738280'
+  premium: false
+  name: Театральный менеджер (удаленно)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 65000
+    to: 125000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-30T14:31:56+0300
+  created_at: 2023-07-30T14:31:56+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=77738280
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/77738280?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/77738280
+  relations: []
+  employer:
+    id: '2515303'
+    name: AFISHA AGENCY
+    url: https://api.hh.ru/employers/2515303
+    alternate_url: https://hh.ru/employer/2515303
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/897506.jpg
+      '90': https://hhcdn.ru/employer-logo/4030711.jpeg
+      '240': https://hhcdn.ru/employer-logo/4030712.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2515303
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Иметь дома пк или ноутбук. ◾️ Умение красиво и понятно формулировать
+      предложения. ◾️ Грамотный пользователь пк. ◾️ Командный дух.
+    responsibility: Звонки клиентам и заключение сделок. ◾️ Отслеживание билетов.
+      ◾️ Работа с клиентской базой, наработка собственных клиентов. ◾️ Ведение CRM-системы.
+      ◾️ Работа с теплой...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: true
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84735912'
+  premium: false
+  name: Продавец в интернет магазин
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 700
+    to: 1000
+    currency: BYR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-08T13:44:24+0300
+  created_at: 2023-08-08T13:44:24+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84735912
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84735912?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84735912
+  relations: []
+  employer:
+    id: '2591478'
+    name: Кулич Т.А.
+    url: https://api.hh.ru/employers/2591478
+    alternate_url: https://hh.ru/employer/2591478
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2591478
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Требуемый опыт работы: не требуется.'
+    responsibility: Консультировать входящий поток клиентов. Поддержание и привлечение
+      новой клиентской базы. Работа с электронной почтой и социальными сетями.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '39'
+    name: Диспетчер
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: part
+    name: Частичная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84577310'
+  premium: false
+  name: Менеджер по работе с клиентами
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1200
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-04T19:42:47+0300
+  created_at: 2023-08-04T19:42:47+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84577310
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84577310?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84577310
+  relations: []
+  employer:
+    id: '2926179'
+    name: Вайлдберриз
+    url: https://api.hh.ru/employers/2926179
+    alternate_url: https://hh.ru/employer/2926179
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1035534.png
+      '240': https://hhcdn.ru/employer-logo/5762897.png
+      '90': https://hhcdn.ru/employer-logo/5762896.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2926179
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Ищем коммуникабельных, порядочных и отзывчивых сотрудников, готовых
+      учиться и развиваться. - Знание ПК. - Ответственность. - Коммуникабельность.
+    responsibility: приём товара. - выдача закaзoв клиентам. - оформление возвpатoв.
+      - поддеpжаниe pабочего места в чистоте.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84888806'
+  premium: false
+  name: Junior Frontend Разработчик
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2760'
+    name: Бишкек
+    url: https://api.hh.ru/areas/2760
+  salary:
+    from: 50000
+    to: null
+    currency: KGS
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Бишкек
+    street: улица Насирдина Исанова
+    building: '79'
+    lat: 42.874238
+    lng: 74.592194
+    description: null
+    raw: Бишкек, улица Насирдина Исанова, 79
+    metro: null
+    metro_stations: []
+    id: '13678057'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-10T13:02:43+0300
+  created_at: 2023-08-10T13:02:43+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84888806
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84888806?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84888806
+  relations: []
+  employer:
+    id: '10016684'
+    name: ОсОО Цифровые инновации
+    url: https://api.hh.ru/employers/10016684
+    alternate_url: https://hh.ru/employer/10016684
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1122120.png
+      '90': https://hhcdn.ru/employer-logo/6109069.png
+      '240': https://hhcdn.ru/employer-logo/6109070.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=10016684
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Three.js. HTML5. CSS3 / SCSS. Git. Какие навыки мы ждем от тебя:
+      Знание JavaScript, HTML, CSS. Знание базовых команд...'
+    responsibility: Работать с JavaScript-фреймворками. Работать с библиотеками (Three.js,
+      Pixi.js, Phaser).
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '96'
+    name: Программист, разработчик
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84955690'
+  premium: false
+  name: Сотрудник по связям с общественностью
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '159'
+    name: Астана
+    url: https://api.hh.ru/areas/159
+  salary: null
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-11T16:01:57+0300
+  created_at: 2023-08-11T16:01:57+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84955690
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84955690?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84955690
+  relations: []
+  employer:
+    id: '2605487'
+    name: Посольство Государства Катара в РК
+    url: https://api.hh.ru/employers/2605487
+    alternate_url: https://hh.ru/employer/2605487
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2605487
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Опыт работы с иностранцами приветствуется. Умение вести деловую
+      переписку. Умение вести документацию. Знание языков арабский, английский, казахский,
+      русский. '
+    responsibility: Встреча, сопровождение делегаций. Ведение деловых переговоров,
+      переписок.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85028493'
+  premium: false
+  name: Водитель для руководителя
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2759'
+    name: Ташкент
+    url: https://api.hh.ru/areas/2759
+  salary:
+    from: 5000000
+    to: 6000000
+    currency: UZS
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T11:16:49+0300
+  created_at: 2023-08-14T11:16:49+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85028493
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85028493?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85028493
+  relations: []
+  employer:
+    id: '3796695'
+    name: ARENA INT PETRO AND CHEMICALS
+    url: https://api.hh.ru/employers/3796695
+    alternate_url: https://hh.ru/employer/3796695
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3796695
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Высокая стрессоустойчивость, спокойный стиль вождения. Пунктуальность
+      и опрятность. Общительность, но в тоже время, сдержанность, гибкость. Владение
+      русским и узбекским языками.
+    responsibility: 'Управление автомобилем представительского класса . Исполнение
+      производственных, личных и иногда семейных поручений руководителя, в т. ч. конфиденциальных
+      . Требования: Своевременная подача автомобиля. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '21'
+    name: Водитель
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84237585'
+  premium: false
+  name: Помощник по хозяйству в загородный дом
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 150000
+    to: 250000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-30T13:27:33+0300
+  created_at: 2023-07-30T13:27:33+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84237585
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84237585?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84237585
+  relations: []
+  employer:
+    id: '9950569'
+    name: Горбунова Татьяна Викторовна
+    url: https://api.hh.ru/employers/9950569
+    alternate_url: https://hh.ru/employer/9950569
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=9950569
+    accredited_it_employer: false
+    trusted: false
+  snippet:
+    requirement: опыт помощником по хозяйству/управляющим с проживанием. -желательно
+      техническое образование. -стрессоустойчивость, исполнительность, скорость восприятия
+      информации и выполнения поставленных задач.
+    responsibility: контроль работы техники/коммуникаций/оборудования в доме (нужно
+      хорошо разбираться). -ведение закупок/бюджета/отчётов. -помощь по хозяйству
+      (убрать снег/косить...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '102'
+    name: Разнорабочий
+  accept_incomplete_resumes: true
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84481826'
+  premium: false
+  name: Юрист
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 3000
+    to: 4000
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: проспект Победителей
+    building: '106'
+    lat: 53.939577
+    lng: 27.478845
+    description: null
+    raw: Минск, проспект Победителей, 106
+    metro: null
+    metro_stations: []
+    id: '671909'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-03T11:55:50+0300
+  created_at: 2023-08-03T11:55:50+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84481826
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84481826?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84481826
+  relations: []
+  employer:
+    id: '2302248'
+    name: Лакруа
+    url: https://api.hh.ru/employers/2302248
+    alternate_url: https://hh.ru/employer/2302248
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2302248
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Высшее юридическое образование. Хорошее владение компьютером (офисные
+      приложения). Коммуникабельность, открытость, умение позитивно общаться с коллегами
+      и клиентами. Умение работать в...
+    responsibility: Юридическое обеспечение деятельности компании. Составление и юридическая
+      оценка договоров (внутренний рынок, импорт/экспорт). Претензионная работа. Представление
+      компании в судах и...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '146'
+    name: Юрист
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84014331'
+  premium: false
+  name: Специалист службы поддержки ресурса Kufar
+  department: null
+  has_test: true
+  response_letter_required: true
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary: null
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: улица Немига
+    building: '5'
+    lat: 53.90222
+    lng: 27.549821
+    description: null
+    raw: Минск, улица Немига, 5
+    metro:
+      station_name: Немига
+      line_name: Автозаводская
+      station_id: '63.422'
+      line_id: '63'
+      lat: 53.905615
+      lng: 27.55415
+    metro_stations:
+    - station_name: Немига
+      line_name: Автозаводская
+      station_id: '63.422'
+      line_id: '63'
+      lat: 53.905615
+      lng: 27.55415
+    - station_name: Фрунзенская
+      line_name: Автозаводская
+      station_id: '63.421'
+      line_id: '63'
+      lat: 53.905286
+      lng: 27.539328
+    id: '623484'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-25T15:22:42+0300
+  created_at: 2023-07-25T15:22:42+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84014331
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84014331?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84014331
+  relations: []
+  employer:
+    id: '1475584'
+    name: Kufar
+    url: https://api.hh.ru/employers/1475584
+    alternate_url: https://hh.ru/employer/1475584
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/2935505.png
+      '90': https://hhcdn.ru/employer-logo/2935504.png
+      original: https://hhcdn.ru/employer-logo-original/623588.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1475584
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Опыт работы с клиентами, опыт работы в службе поддержки. Готовность
+      работать по сменному графику, в выходные и праздничные дни. '
+    responsibility: 'Работа с обращениями пользователей по вопросам взаимодействия
+      с ресурсом (жалобы, вопросы, сообщения о технических проблемах, предложения
+      и т.п.). '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85275238'
+  premium: false
+  name: Семейный водитель
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 110000
+    to: null
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T22:08:09+0300
+  created_at: 2023-08-17T22:08:09+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85275238
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85275238?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85275238
+  relations: []
+  employer:
+    id: '4644493'
+    name: Стройтехнолоджи
+    url: https://api.hh.ru/employers/4644493
+    alternate_url: https://hh.ru/employer/4644493
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3394181.jpeg
+      '240': https://hhcdn.ru/employer-logo/3394182.jpeg
+      original: https://hhcdn.ru/employer-logo-original/738301.jpg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=4644493
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Наличие фото в резюме ОБЯЗАТЕЛЬНО! СТАЖ ВОЖДЕНИЯ ОТ 10-ТИ ЛЕТ! Опыт
+      аналогичной работы персональным водителем ОБЯЗАТЕЛЕН от 5-ти...
+    responsibility: Семейный водитель руководителя на автомобиль Mercedes V. Отвозить
+      ребенка в школу и из школы, на кружки и секции (в пределах...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '21'
+    name: Водитель
+  accept_incomplete_resumes: true
+  experience:
+    id: moreThan6
+    name: Более 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85127755'
+  premium: false
+  name: Junior Front-End Developer (React / Angular)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: null
+    to: 200
+    currency: USD
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-15T15:07:35+0300
+  created_at: 2023-08-15T15:07:35+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85127755
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85127755?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85127755
+  relations: []
+  employer:
+    id: '4558530'
+    name: Медведев Ф. Я.
+    url: https://api.hh.ru/employers/4558530
+    alternate_url: https://hh.ru/employer/4558530
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=4558530
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Уверенные знания: HTML, CSS, JavaScript, Angular или React, Git.
+      Понимание как работает HTTP, принципов REST. Самостоятельность, ответственность,
+      самоорганизованность. '
+    responsibility: Участие в разработке WEB приложения cms системы. Взаимодействие
+      с бекэнд разработчиками. Написание качественного поддерживаемого кода.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '96'
+    name: Программист, разработчик
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84202499'
+  premium: false
+  name: Менеджер-стажер Wildberries
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 20000
+    to: 40000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Москва
+    street: null
+    building: null
+    lat: 55.755864
+    lng: 37.617698
+    description: null
+    raw: Москва
+    metro: null
+    metro_stations: []
+    id: '13441549'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-28T12:37:58+0300
+  created_at: 2023-07-28T12:37:58+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84202499
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84202499?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84202499
+  relations: []
+  employer:
+    id: '9824856'
+    name: Глухов Илья Алексеевич
+    url: https://api.hh.ru/employers/9824856
+    alternate_url: https://hh.ru/employer/9824856
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=9824856
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: проактивность, вовлеченность, системность. - умение схватывать "на
+      лету", быстрая обучаемость. - ответственный подход и дисциплинированность. -
+      можно без опыта. Дополнительным плюсом будут пройденные...
+    responsibility: 'Работа с контентом: заполнение карточек товара, загрузка фотографий,
+      описаний. - Настройка рекламы. - Работа с аналитическими сервисами.'
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85083966'
+  premium: false
+  name: Civil engineer
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2781'
+    name: Бухара
+    url: https://api.hh.ru/areas/2781
+  salary:
+    from: 20000000
+    to: 22000000
+    currency: UZS
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-15T06:17:32+0300
+  created_at: 2023-08-15T06:17:32+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85083966
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85083966?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85083966
+  relations: []
+  employer:
+    id: '5529970'
+    name: TECHENERGO Engineering Services
+    url: https://api.hh.ru/employers/5529970
+    alternate_url: https://hh.ru/employer/5529970
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=5529970
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Experience in construction of RCC & Structural chimney. Proven ability
+      to successfully trouble shoot site construction constraints raised during the
+      construction...
+    responsibility: Experience in managing contractors and executing the scope of
+      work as per the construction schedule. Working knowledge in contour survey...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '108'
+    name: Руководитель строительного проекта
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85101455'
+  premium: false
+  name: Финансовый директор
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '160'
+    name: Алматы
+    url: https://api.hh.ru/areas/160
+  salary:
+    from: 3000000
+    to: null
+    currency: KZT
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Алматы
+    street: проспект Райымбека
+    building: '211'
+    lat: 43.269646
+    lng: 76.923959
+    description: null
+    raw: Алматы, проспект Райымбека, 211
+    metro:
+      station_name: Райымбек батыра
+      line_name: Первая
+      station_id: '64.430'
+      line_id: '64'
+      lat: 43.271201
+      lng: 76.9448
+    metro_stations:
+    - station_name: Райымбек батыра
+      line_name: Первая
+      station_id: '64.430'
+      line_id: '64'
+      lat: 43.271201
+      lng: 76.9448
+    id: '461057'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-15T10:43:51+0300
+  created_at: 2023-08-15T10:43:51+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85101455
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85101455?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85101455
+  relations: []
+  employer:
+    id: '1570989'
+    name: Zhebe Logistics
+    url: https://api.hh.ru/employers/1570989
+    alternate_url: https://hh.ru/employer/1570989
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/3057284.jpeg
+      '240': https://hhcdn.ru/employer-logo/3057285.jpeg
+      original: https://hhcdn.ru/employer-logo-original/654034.jpg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1570989
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Высшее финансовое или экономическое образование. Профессиональный
+      опыт работы не менее 6 лет на должности финансового директора. Понимание видов
+      учета Компании...
+    responsibility: Формирование среднесрочной и краткосрочной финансовой стратегии
+      и бизнес планов Компании. Бюджетирование, контроль платёжной дисциплины. Контроль
+      доходов и обеспечение фирмы финансами...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '135'
+    name: Финансовый директор (CFO)
+  accept_incomplete_resumes: false
+  experience:
+    id: moreThan6
+    name: Более 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84085108'
+  premium: false
+  name: Флорист / декоратор-оформитель
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '159'
+    name: Астана
+    url: https://api.hh.ru/areas/159
+  salary:
+    from: null
+    to: 150000
+    currency: KZT
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-26T19:06:04+0300
+  created_at: 2023-07-26T19:06:04+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84085108
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84085108?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84085108
+  relations: []
+  employer:
+    id: '8893226'
+    name: Florence
+    url: https://api.hh.ru/employers/8893226
+    alternate_url: https://hh.ru/employer/8893226
+    logo_urls:
+      '90': https://hhcdn.ru/employer-logo/5659692.jpeg
+      '240': https://hhcdn.ru/employer-logo/5659693.jpeg
+      original: https://hhcdn.ru/employer-logo-original/1009729.jpg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=8893226
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Креативность.
+    responsibility: Выносливость, придется переносить коробки с цветами, настольные
+      стойки.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '77935027'
+  premium: false
+  name: Билетный промоутер (работа из дома )
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2'
+    name: Санкт-Петербург
+    url: https://api.hh.ru/areas/2
+  salary:
+    from: 65000
+    to: 125000
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-07T20:22:36+0300
+  created_at: 2023-08-07T20:22:36+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=77935027
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/77935027?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/77935027
+  relations: []
+  employer:
+    id: '2515303'
+    name: AFISHA AGENCY
+    url: https://api.hh.ru/employers/2515303
+    alternate_url: https://hh.ru/employer/2515303
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/897506.jpg
+      '90': https://hhcdn.ru/employer-logo/4030711.jpeg
+      '240': https://hhcdn.ru/employer-logo/4030712.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2515303
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: грамотная речь. ◾️ Уверенное владение ПК. ◾️ Умение работать в команде.
+      ◾️ Мотивация на высокий заработок. ◾️ Готовность обучаться и зарабатывать деньги.
+    responsibility: 'Продажа театральных билетов по ip-телефонии. ◾️ Заключение сделок
+      и контроль доставки билетов клиенту. ◾️ Актуализация и обновление клиентской
+      базы. ◾️ '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: true
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83726213'
+  premium: false
+  name: Продавец-консультант косметики
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2760'
+    name: Бишкек
+    url: https://api.hh.ru/areas/2760
+  salary:
+    from: 20000
+    to: 50000
+    currency: KGS
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-20T06:37:40+0300
+  created_at: 2023-07-20T06:37:40+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83726213
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83726213?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83726213
+  relations: []
+  employer:
+    id: '9911536'
+    name: Эркимбаева Назгуль Жакшилыковна
+    url: https://api.hh.ru/employers/9911536
+    alternate_url: https://hh.ru/employer/9911536
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=9911536
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Быстрая обучаемость.
+    responsibility: Подбор уходовой и декоративной косметики. Консультация по ассортименту.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '97'
+    name: Продавец-консультант, продавец-кассир
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84573422'
+  premium: false
+  name: Мемолог
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '104'
+    name: Челябинск
+    url: https://api.hh.ru/areas/104
+  salary:
+    from: 45000
+    to: null
+    currency: RUR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-16T17:39:55+0300
+  created_at: 2023-08-16T17:39:55+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84573422
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84573422?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84573422
+  relations: []
+  employer:
+    id: '5129206'
+    name: MDK
+    url: https://api.hh.ru/employers/5129206
+    alternate_url: https://hh.ru/employer/5129206
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/805220.jpg
+      '90': https://hhcdn.ru/employer-logo/3661767.jpeg
+      '240': https://hhcdn.ru/employer-logo/3661768.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=5129206
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Быть с графическими редакторами на «э, слышь, сюда подошел».
+    responsibility: null
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '3'
+    name: SMM-менеджер, контент-менеджер
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '71635607'
+  premium: false
+  name: Менеджер по продажам (без поиска клиентов)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '43'
+    name: Калуга
+    url: https://api.hh.ru/areas/43
+  salary:
+    from: 40000
+    to: 60000
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Калуга
+    street: улица Гагарина
+    building: '1'
+    lat: 54.515669
+    lng: 36.242279
+    description: null
+    raw: Калуга, улица Гагарина, 1
+    metro: null
+    metro_stations: []
+    id: '649518'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T10:49:21+0300
+  created_at: 2023-08-14T10:49:21+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=71635607
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/71635607?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/71635607
+  relations: []
+  employer:
+    id: '2800'
+    name: Группа Актион
+    url: https://api.hh.ru/employers/2800
+    alternate_url: https://hh.ru/employer/2800
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/4102404.png
+      '90': https://hhcdn.ru/employer-logo/4102403.png
+      original: https://hhcdn.ru/employer-logo-original/915431.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2800
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Карьерный рост при наличии управленческих амбиций, целеустремленности
+      и хороших результатов.
+    responsibility: 'Мы разрабатываем продукты для коммерческих и государственных
+      учреждений: Выпускаем электронные и печатные журналы: Главбух, Упрощенка, Генеральный
+      директор, Кадровое дело и...'
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85030545'
+  premium: false
+  name: Водитель категории В
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 2000
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T11:28:57+0300
+  created_at: 2023-08-14T11:28:57+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85030545
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85030545?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85030545
+  relations: []
+  employer:
+    id: '9401052'
+    name: ФРИГО П3
+    url: https://api.hh.ru/employers/9401052
+    alternate_url: https://hh.ru/employer/9401052
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=9401052
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Водительское удостоверение категории В. Медицинская справка. Санитарная
+      книга приветствуется. Служба в армии.
+    responsibility: Перевозка товаров на автомобиле категории В по маршруту РБ-РФ.
+      Оформление сопутствующих документов. Поддержание транспорта в технически исправном
+      состоянии.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '21'
+    name: Водитель
+  accept_incomplete_resumes: true
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84186689'
+  premium: false
+  name: Менеджер по продажам (Алматы, Астана)
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '160'
+    name: Алматы
+    url: https://api.hh.ru/areas/160
+  salary:
+    from: 250000
+    to: null
+    currency: KZT
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Алматы
+    street: улица Желтоксан
+    building: '148'
+    lat: 43.247159
+    lng: 76.941387
+    description: null
+    raw: Алматы, улица Желтоксан, 148
+    metro: null
+    metro_stations: []
+    id: '1800760'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-28T09:35:24+0300
+  created_at: 2023-07-28T09:35:24+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84186689
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84186689?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84186689
+  relations: []
+  employer:
+    id: '1678542'
+    name: Эстетикс групп (Aesthetics Group)
+    url: https://api.hh.ru/employers/1678542
+    alternate_url: https://hh.ru/employer/1678542
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/895436.jpeg
+      '90': https://hhcdn.ru/employer-logo/4022431.jpeg
+      '240': https://hhcdn.ru/employer-logo/4022432.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1678542
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Высшее образование. Уверенный пользователь ПК (Microsoft Office).
+      Опыт работы в фармации и/или индустрии красоты. Отличные переговорные навыки. '
+    responsibility: 'Поиск новых клиентов и заключение договоров. Ведение переговоров
+      по коммерческим условиям. Полное ведение бренда. Повышение узнаваемости бренда,
+      развитие имиджа компании. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: false
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85245695'
+  premium: false
+  name: Администратор детского центра
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '2251'
+    name: Пинск
+    url: https://api.hh.ru/areas/2251
+  salary:
+    from: 550
+    to: 950
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T12:35:46+0300
+  created_at: 2023-08-17T12:35:46+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85245695
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85245695?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85245695
+  relations: []
+  employer:
+    id: '9884162'
+    name: Козеко А. В.
+    url: https://api.hh.ru/employers/9884162
+    alternate_url: https://hh.ru/employer/9884162
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=9884162
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Средне-специальное или высшее образование. Приветствуется педагогическое
+      образование.
+    responsibility: 'Обслуживание клиентов центра, работа в программе 1с (на элементарном
+      уровне), составление расписания, продажа услуг детского центра, привлечение
+      клиентов. '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '40'
+    name: Другое
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85221542'
+  premium: false
+  name: Бухгалтер на первичную документацию
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1700
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минский район
+    street: Р-40, 1-й километр
+    building: '2'
+    lat: 53.981427
+    lng: 27.656621
+    description: null
+    raw: Минский район, Р-40, 1-й километр, 2
+    metro: null
+    metro_stations: []
+    id: '6077141'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T08:53:14+0300
+  created_at: 2023-08-17T08:53:14+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85221542
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85221542?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85221542
+  relations: []
+  employer:
+    id: '3347390'
+    name: АТС СаниБел
+    url: https://api.hh.ru/employers/3347390
+    alternate_url: https://hh.ru/employer/3347390
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/5807602.png
+      '90': https://hhcdn.ru/employer-logo/5807601.png
+      original: https://hhcdn.ru/employer-logo-original/1046737.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=3347390
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Профильное образование. Знание и владение профессией, стремление
+      работать и развиваться, аккуратность, внимательность, стрессоустойчивость. Опыт
+      работы на аналогичной должности от 3...
+    responsibility: Оптовая торговля, импорт из КНР и РФ. Обработка первичной учетной
+      документации. Учет ОС, НА, УСО, учет ТМЦ, приходные и расходные...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '18'
+    name: Бухгалтер
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85005295'
+  premium: false
+  name: Водитель персональный
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '160'
+    name: Алматы
+    url: https://api.hh.ru/areas/160
+  salary:
+    from: 300000
+    to: 350000
+    currency: KZT
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Алматы
+    street: канатная дорога Кок-Тобе
+    building: станция канатной дороги Кок-Тобе
+    lat: 43.234286
+    lng: 76.975568
+    description: null
+    raw: Алматы, канатная дорога Кок-Тобе, станция канатной дороги Кок-Тобе
+    metro: null
+    metro_stations: []
+    id: '13999565'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-14T07:24:46+0300
+  created_at: 2023-08-14T07:24:46+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85005295
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85005295?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85005295
+  relations: []
+  employer:
+    id: '2167816'
+    name: Botanika
+    url: https://api.hh.ru/employers/2167816
+    alternate_url: https://hh.ru/employer/2167816
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=2167816
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Знание маршрута. Грамотный своевременный сервис. Наличие своего
+      авто для мелких поручений. Умение вести отчеты. Стрессоустойчивость и ответственность.
+      Требования: Опыт работы...'
+    responsibility: Безопасное вождение. Содержание машины в чистоте. Контроль безопасности
+      шефа. Выполнение личных поручений. Хозяйственные вопросы по дому.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: true
+  professional_roles:
+  - id: '21'
+    name: Водитель
+  accept_incomplete_resumes: false
+  experience:
+    id: moreThan6
+    name: Более 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85272667'
+  premium: false
+  name: Chief Executive Officer/CVO/COO
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1'
+    name: Москва
+    url: https://api.hh.ru/areas/1
+  salary:
+    from: 1500000
+    to: null
+    currency: RUR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T19:27:30+0300
+  created_at: 2023-08-17T19:27:30+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85272667
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85272667?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85272667
+  relations: []
+  employer:
+    id: '1124'
+    name: Fersol
+    url: https://api.hh.ru/employers/1124
+    alternate_url: https://hh.ru/employer/1124
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/1002135.jpg
+      '90': https://hhcdn.ru/employer-logo/5629320.jpeg
+      '240': https://hhcdn.ru/employer-logo/5629321.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1124
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: null
+    responsibility: Совместная работа с CEO группы компаний и собственниками компании
+      по оптимизации затрат и процессов в операционной деятельности компании, по составлению...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '26'
+    name: Генеральный директор, исполнительный директор (CEO)
+  accept_incomplete_resumes: false
+  experience:
+    id: moreThan6
+    name: Более 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85251897'
+  premium: false
+  name: QA (тестировщик) наукоемкого продукта
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary: null
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: улица Толбухина
+    building: '2'
+    lat: 53.926054
+    lng: 27.61467
+    description: null
+    raw: Минск, улица Толбухина, 2
+    metro:
+      station_name: Парк Челюскинцев
+      line_name: Московская
+      station_id: '62.406'
+      line_id: '62'
+      lat: 53.924214
+      lng: 27.613646
+    metro_stations:
+    - station_name: Парк Челюскинцев
+      line_name: Московская
+      station_id: '62.406'
+      line_id: '62'
+      lat: 53.924214
+      lng: 27.613646
+    id: '132552'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-17T13:50:43+0300
+  created_at: 2023-08-17T13:50:43+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85251897
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85251897?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85251897
+  relations: []
+  employer:
+    id: '951277'
+    name: ПОСПЕКС
+    url: https://api.hh.ru/employers/951277
+    alternate_url: https://hh.ru/employer/951277
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/2353161.png
+      '90': https://hhcdn.ru/employer-logo/2353160.png
+      original: https://hhcdn.ru/employer-logo-original/477827.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=951277
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Техническое высшее образование. Желательно физическое или математическое.
+      Знание методик и принципов тестирования, разработки автоматических тестов. Опыт
+      в ручном или автоматизированном...
+    responsibility: 'Мануальное тестирование программного комплекса FROST 3D (функционал,
+      интерфейс, юзабилити). Проектирование тестов, создание тестовой документации
+      (чек-листы, тест-кейсы). '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '124'
+    name: Тестировщик
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84026783'
+  premium: false
+  name: Продавец в Вейп Шоп
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1200
+    to: 1700
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Минск
+    street: улица Владислава Голубка
+    building: '2'
+    lat: 53.925937
+    lng: 27.444781
+    description: null
+    raw: Минск, улица Владислава Голубка, 2
+    metro: null
+    metro_stations: []
+    id: '13563102'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-31T14:53:58+0300
+  created_at: 2023-07-31T14:53:58+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84026783
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84026783?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84026783
+  relations: []
+  employer:
+    id: '8900997'
+    name: Стелар Лимитед
+    url: https://api.hh.ru/employers/8900997
+    alternate_url: https://hh.ru/employer/8900997
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/5489801.png
+      '90': https://hhcdn.ru/employer-logo/5489800.png
+      original: https://hhcdn.ru/employer-logo-original/967672.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=8900997
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'В нашей компании важен ответственной подход, доброжелательность
+      и любовь к своей работе. Что требуется от тебя: Опыт работы на данной...'
+    responsibility: 'Консультировать наших Клиентов и помогать им в их выборе. Оформлять
+      пространство продукцией лучших производителей. Работать с кассой и терминалом
+      (обучаем). '
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '97'
+    name: Продавец-консультант, продавец-кассир
+  accept_incomplete_resumes: false
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '83690754'
+  premium: false
+  name: Токарь-фрезеровщик
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 2000
+    to: null
+    currency: BYR
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: агрогородок Колодищи
+    street: улица Чкалова
+    building: '51'
+    lat: 53.937048
+    lng: 27.766099
+    description: null
+    raw: агрогородок Колодищи, улица Чкалова, 51
+    metro: null
+    metro_stations: []
+    id: '4806565'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-07-19T13:59:48+0300
+  created_at: 2023-07-19T13:59:48+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=83690754
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/83690754?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/83690754
+  relations: []
+  employer:
+    id: '1273937'
+    name: Арматурные технологии
+    url: https://api.hh.ru/employers/1273937
+    alternate_url: https://hh.ru/employer/1273937
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1273937
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Ответственность. Исполнительность.
+    responsibility: Выполнение фрезерных работ.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals:
+  - id: from_four_to_six_hours_in_a_day
+    name: Можно работать сменами по 4–6 часов в день
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '128'
+    name: Токарь, фрезеровщик, шлифовщик
+  accept_incomplete_resumes: true
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85131859'
+  premium: false
+  name: Бухгалтер
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '1002'
+    name: Минск
+    url: https://api.hh.ru/areas/1002
+  salary:
+    from: 1900
+    to: null
+    currency: BYR
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: деревня Цнянка
+    street: null
+    building: null
+    lat: 53.975073
+    lng: 27.532016
+    description: null
+    raw: деревня Цнянка
+    metro: null
+    metro_stations: []
+    id: '179995'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-15T16:03:37+0300
+  created_at: 2023-08-15T16:03:37+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85131859
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85131859?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85131859
+  relations: []
+  employer:
+    id: '1075075'
+    name: БЕЛРОБОТ
+    url: https://api.hh.ru/employers/1075075
+    alternate_url: https://hh.ru/employer/1075075
+    logo_urls:
+      original: https://hhcdn.ru/employer-logo-original/82374.bmp
+      '90': https://hhcdn.ru/employer-logo/745139.png
+      '240': https://hhcdn.ru/employer-logo/745140.png
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=1075075
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Высшее или среднее специальное образование (экономическое или бухгалтерское).
+      Знание и опыт работы в 1С8.3 (Хьюмен). '
+    responsibility: Учет банковских операций по сч.51. Регистрация договоров. Учет
+      прихода импорта из РФ. ЭСЧФ (выставление и подписание, обработка в 1...
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '18'
+    name: Бухгалтер
+  accept_incomplete_resumes: false
+  experience:
+    id: between3And6
+    name: От 3 до 6 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '84342275'
+  premium: false
+  name: Менеджер в компанию «KOMEK.KZ»
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '159'
+    name: Астана
+    url: https://api.hh.ru/areas/159
+  salary:
+    from: 300000
+    to: 600000
+    currency: KZT
+    gross: false
+  type:
+    id: open
+    name: Открытая
+  address:
+    city: Нур-Султан (Астана)
+    street: переулок Иманова
+    building: '19'
+    lat: 51.163658
+    lng: 71.447937
+    description: null
+    raw: Нур-Султан (Астана), переулок Иманова, 19
+    metro: null
+    metro_stations: []
+    id: '7641016'
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-01T09:41:05+0300
+  created_at: 2023-08-01T09:41:05+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=84342275
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/84342275?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/84342275
+  relations: []
+  employer:
+    id: '6129445'
+    name: Аскаров Д.К.
+    url: https://api.hh.ru/employers/6129445
+    alternate_url: https://hh.ru/employer/6129445
+    logo_urls:
+      '240': https://hhcdn.ru/employer-logo/6073806.jpeg
+      '90': https://hhcdn.ru/employer-logo/6073805.jpeg
+      original: https://hhcdn.ru/employer-logo-original/1113301.jpeg
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=6129445
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: 'Уверенный пользователь WHATSAPP. —Грамотная речь русский/казахский
+      язык(обязательно). —Стрессоустойчивость. —Грамотная речь. —Инициативность. —Ответственность.
+      —Доброжелательность: —Оптимизм. —Амбициозность.'
+    responsibility: Консультация клиентов. —Обработка заявок. —Работу по скрипту.
+      — Сдача отчётности. —Созвон с клиентами.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '70'
+    name: Менеджер по продажам, менеджер по работе с клиентами
+  accept_incomplete_resumes: true
+  experience:
+    id: between1And3
+    name: От 1 года до 3 лет
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false
+- id: '85108832'
+  premium: false
+  name: Регистратор
+  department: null
+  has_test: false
+  response_letter_required: false
+  area:
+    id: '172'
+    name: Костанай
+    url: https://api.hh.ru/areas/172
+  salary:
+    from: 200000
+    to: 216000
+    currency: KZT
+    gross: true
+  type:
+    id: open
+    name: Открытая
+  address: null
+  response_url: null
+  sort_point_distance: null
+  published_at: 2023-08-15T12:01:37+0300
+  created_at: 2023-08-15T12:01:37+0300
+  archived: false
+  apply_alternate_url: https://hh.ru/applicant/vacancy_response?vacancyId=85108832
+  insider_interview: null
+  url: https://api.hh.ru/vacancies/85108832?host=hh.ru
+  alternate_url: https://hh.ru/vacancy/85108832
+  relations: []
+  employer:
+    id: '10181832'
+    name: Глазная Клиника Лазер
+    url: https://api.hh.ru/employers/10181832
+    alternate_url: https://hh.ru/employer/10181832
+    logo_urls: null
+    vacancies_url: https://api.hh.ru/vacancies?employer_id=10181832
+    accredited_it_employer: false
+    trusted: true
+  snippet:
+    requirement: Высшее образование. Коммуникабельность.
+    responsibility: Прием звонков. Оформление пациента. Обзвон пациентов.
+  contacts: null
+  schedule: null
+  working_days: []
+  working_time_intervals: []
+  working_time_modes: []
+  accept_temporary: false
+  professional_roles:
+  - id: '8'
+    name: Администратор
+  accept_incomplete_resumes: true
+  experience:
+    id: noExperience
+    name: Нет опыта
+  employment:
+    id: full
+    name: Полная занятость
+  adv_response_url: null
+  is_adv_vacancy: false

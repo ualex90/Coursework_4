@@ -32,7 +32,7 @@ class Vacancies:
             self.__print_log(count)
         return count
 
-    def sorted(self, attribute: str = 'date', reverse: bool = False) -> None:
+    def sorted(self, attribute: str = 'favorite', reverse: bool = True) -> None:
         """
         Сортировка списка вакансий по аттрибуту
         Можно задать только 1 аттрибут для сортировки
@@ -84,4 +84,4 @@ class Vacancies:
         return len(self.list)
 
     def __str__(self):
-            [print(i) for i in self.list]
+        [print(i) for i in self.list]

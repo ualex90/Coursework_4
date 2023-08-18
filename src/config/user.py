@@ -16,7 +16,7 @@ class User(Config):
         super().__init__()
         self.name = kwargs.get('name')
         self._service = kwargs.get('_service') if kwargs.get('_service') else 1
-        self._sort = kwargs.get('_sort') if kwargs.get('_sort') else {'attribute': 'date', 'reverse': False}
+        self._sort = kwargs.get('_sort') if kwargs.get('_sort') else {'attribute': 'favorite', 'reverse': True}
         self.save_config()
 
     @property
@@ -37,4 +37,3 @@ class User(Config):
     def sort(self, data: dict):
         self._sort = data
         self.save_config()
-

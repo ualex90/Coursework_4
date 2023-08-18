@@ -18,7 +18,7 @@ class Vacancy:
         self.salary_to = salary_to
         self.url = url
         self.__is_to_removed = False
-        self.__is_favorite = is_favorite
+        self.__is_favorite = is_favorite if is_favorite else False
 
     @property
     def is_favorite(self) -> bool:
