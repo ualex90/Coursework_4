@@ -1,5 +1,6 @@
 import math
 
+from settings import VACANCIES
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
 from src.ui.ui_utils import UIUtils
@@ -15,7 +16,7 @@ class TextUI(UIUtils):
         self.hh = HeadHunterAPI()  # объект для работы с API HeadHunter
         self.sj = SuperJobAPI()  # объект для работы с API HeadHunter
         self.vacancies = Vacancies()  # объект для добавления вакансий в список
-        self.json_manager = JSONManager('vacancies.json')  # объект для сохранения и чтения данных JSON
+        self.json_manager = JSONManager(VACANCIES)  # объект для сохранения и чтения данных JSON
         self.user = None  # Объект "Пользователь"
         self.sorted = dict()  # Параметр сортировки
         self.view_page = 0  # Просматриваемая страница

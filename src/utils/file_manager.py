@@ -12,7 +12,7 @@ from src.vacancies.vacancies import Vacancies
 
 class FileManager(ABC):
     """Абстрактный класс для работы с файлами"""
-    def __init__(self, file_name) -> None:
+    def __init__(self, file_name=None) -> None:
         """
         Инициализация
         :param file_name: Имя файла (объект Path или имя файла строкой, который будет находится в папке fixtures

@@ -2,7 +2,7 @@ import os
 import time
 from pathlib import Path
 
-from settings import USER_FILE
+from settings import USER_FILE, VACANCIES
 from src.config.config_tool import ConfigTool
 from src.config.user import User
 from src.vacancies.vacancy import Vacancy
@@ -107,10 +107,19 @@ class UIUtils:
             case '7':
                 answer = input('Уверены что хотите очистить локальную базу данных? (y/n) >> ').strip().lower()
                 if answer == 'y':
-                    pass
+                    VACANCIES.unlink()
+                    print('Локальная база данных пуста')
+                    time.sleep(3)
                 self.clear_screen()
                 self.settings()
             case '8':
+                answer = input('Уверены что хотите удалить пользователя и его настройки? (y/n) >> ').strip().lower()
+                if answer == 'y':
+                    USER_FILE.unlink()
+                    self.clear_screen()
+                    print('Для удаления пользователя, перезапустите приложение.')
+                    time.sleep(3)
+                    return None
                 self.clear_screen()
                 self.settings()
             case '9':
