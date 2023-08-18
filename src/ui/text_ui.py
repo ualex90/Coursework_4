@@ -3,7 +3,7 @@ import math
 from src.api.headhunter_api import HeadHunterAPI
 from src.api.superjob_api import SuperJobAPI
 from src.ui.ui_utils import UIUtils
-from src.utils.file_manager import JSONManager, YAMLManager
+from src.utils.file_manager import JSONManager
 from src.vacancies.vacancies import Vacancies
 
 
@@ -16,8 +16,6 @@ class TextUI(UIUtils):
         self.sj = SuperJobAPI()  # объект для работы с API HeadHunter
         self.vacancies = Vacancies()  # объект для добавления вакансий в список
         self.json_manager = JSONManager('vacancies.json')  # объект для сохранения и чтения данных JSON
-        self.hh_source = YAMLManager('hh_source.yaml')  # объект для сохранения исходных данных HH в YAML
-        self.sj_source = YAMLManager('sj_source.yaml')  # объект для сохранения исходных данных SJ в YAML
         self.user = None  # Объект "Пользователь"
         self.sorted = dict()  # Параметр сортировки
         self.view_page = 0  # Просматриваемая страница

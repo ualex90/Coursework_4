@@ -3,12 +3,13 @@ from datetime import datetime
 
 from settings import HH_SOURCE
 from src.api.api import API
+from src.utils.file_manager import YAMLManager
 
 
 class HeadHunterAPI(API):
     def __init__(self):
         super().__init__()
-        self.response_file = HH_SOURCE
+        self.hh_source = YAMLManager(HH_SOURCE)  # объект для сохранения исходных данных HH в YAML
 
     def get_vacancies(self, search_query: str, area=None, page=None,
                       per_page=50, page_limit=None, source=False) -> dict:
@@ -56,7 +57,7 @@ class HeadHunterAPI(API):
         else:
             print('HeadHunter - Отсутствуют вакансии по запросу')
         if source:
-            return vacancies
+            self.hh_source.save(vacancies)
         # Возврат нормализованного списка
         return self.normalization_data(vacancies)
 

@@ -4,12 +4,13 @@ from datetime import datetime
 
 from settings import SJ_SOURCE, SJ_KEY
 from src.api.api import API
+from src.utils.file_manager import YAMLManager
 
 
 class SuperJobAPI(API):
     def __init__(self):
         super().__init__()
-        self.response_file = SJ_SOURCE
+        self.sj_source = YAMLManager(SJ_SOURCE)  # объект для сохранения исходных данных SJ в YAML
 
     def get_vacancies(self, search_query: str, page=None, per_page=100,
                       page_limit=None, source=False) -> dict:
@@ -58,7 +59,7 @@ class SuperJobAPI(API):
         else:
             print('SuperJob - Отсутствуют вакансии по запросу')
         if source:
-            return vacancies
+            self.sj_source.save(vacancies)
         return self.normalization_data(vacancies)
 
     @staticmethod

@@ -85,4 +85,3 @@ class Vacancies:
 
     def __str__(self):
             [print(i) for i in self.list]
-

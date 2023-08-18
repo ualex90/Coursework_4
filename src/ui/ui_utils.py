@@ -59,12 +59,12 @@ class UIUtils:
         label[2] = f' > |' if self.conf.is_sj_source else '   |'
         label[3] = f' > |' if self.conf.is_vacancies_log else '   |'
         label[4] = f' > |' if self.conf.is_save_log else '   |'
-        label[5] = f'{self.conf.hh_limit:<2} |' if self.conf.hh_limit else '40 |'
-        label[6] = f' {self.conf.sj_limit:<1} |' if self.conf.sj_limit else ' 6 |'
+        label[5] = f'{self.conf.hh_limit:>2} |' if self.conf.hh_limit else '40 |'
+        label[6] = f' {self.conf.sj_limit:>1} |' if self.conf.sj_limit else ' 6 |'
         label[7] = f'!!!|'
         label[8] = f'!!!|'
 
-        print('      <Настройка приложения>')
+        print('    <Настройка приложения>')
         print(f'{label[1]} 1. Сохранять исходные данные HeadHunter\n'
               f'{label[2]} 2. Сохранять исходные данные SuperJob\n'
               f'{label[3]} 3. Отображать лог добавления вакансий в список\n'
@@ -93,12 +93,21 @@ class UIUtils:
                 self.clear_screen()
                 self.settings()
             case '5':
+                num = input('Введите новое значение >> ')
+                if num.isdigit():
+                    self.conf.hh_limit = int(num)
                 self.clear_screen()
                 self.settings()
             case '6':
+                num = input('Введите новое значение >> ')
+                if num.isdigit():
+                    self.conf.sj_limit = int(num)
                 self.clear_screen()
                 self.settings()
             case '7':
+                answer = input('Уверены что хотите очистить локальную базу данных? (y/n) >> ').strip().lower()
+                if answer == 'y':
+                    pass
                 self.clear_screen()
                 self.settings()
             case '8':

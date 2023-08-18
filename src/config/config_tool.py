@@ -64,7 +64,7 @@ class ConfigTool(Config):
     @hh_limit.setter
     def hh_limit(self, data: int):
         if isinstance(data, int):
-            if 0 < data < 40:
+            if 0 < data <= 40:
                 self._hh_limit = data
                 self.save_config()
             elif data > 40:
@@ -78,9 +78,9 @@ class ConfigTool(Config):
     @sj_limit.setter
     def sj_limit(self, data: int):
         if isinstance(data, int):
-            if 0 < data < 6:
-                self._hh_limit = data
+            if 0 < data <= 6:
+                self._sj_limit = data
                 self.save_config()
             elif data > 6:
-                self._hh_limit = 6
+                self._sj_limit = 6
                 self.save_config()
