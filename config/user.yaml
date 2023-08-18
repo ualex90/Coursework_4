@@ -1,5 +1,0 @@
-name: AnyKey
-_service: 1
-_sort:
-  attribute: favorite
-  reverse: true
